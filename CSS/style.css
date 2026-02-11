@@ -1,5 +1,11 @@
 /* ==== Estilos página 404 ==== */
-/* BOTÓN PRIMARIO (negro) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+
 .btn-primary-solid {
   background-color: #000000;
   color: #ffffff;
