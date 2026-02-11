@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
 /* Estilos Contacto */
+
 h1 span {
   color: #6FAF9A; 
 }
@@ -7,25 +13,22 @@ h1 span {
     background-color: #f9f9f9 !important;
 }
 
-/* BOTÓN PRINCIPAL PERSONALIZADO */
 .btn-primary-main {
-    background-color: #000000 !important;   /* Negro */
-    color: #ffffff !important;              /* Texto blanco */
+    background-color: #000000 !important; 
+    color: #ffffff !important;  
     border: none !important;
     padding: 12px 20px;
     font-weight: 600;
-    border-radius: 8px;                     /* Suave */
+    border-radius: 8px;   
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-/* Hover */
 .btn-primary-main:hover {
-    background-color: #222222 !important;   /* Negro aclarado */
-    color: #ffffff !important;              /* MANTENER texto blanco */
+    background-color: #222222 !important; 
+    color: #ffffff !important;  
     transform: translateY(-1px);
 }
 
-/* Active */
 .btn-primary-main:active {
     background-color: #000000 !important;
     color: #ffffff !important;

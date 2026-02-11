@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,25 @@
       content="¿Tenés consultas sobre programación, marketing digital o IA? Escribinos a Blog DevMarket IA y recibí asistencia personalizada en menos de 24 horas."
     />
     <meta name="author" content="Equipo DevMarket AI" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,11 +38,9 @@
   </head>
   <body>
     <main>
-      <!-- SECCIÓN 1: Texto + Formulario -->
       <section class="py-5">
         <div class="container">
           <div class="row align-items-center">
-            <!-- Columna izquierda: Texto -->
             <div class="col-md-6 mb-4">
               <h1 class="fw-bold">Hablemos de tus <span>ideas.</span></h1>
               <p class="text-secondary mt-3">
@@ -39,7 +56,6 @@
               </p>
             </div>
 
-            <!-- Columna derecha: Formulario -->
             <div class="col-md-6">
               <div class="p-4 shadow-sm rounded bg-white">
                 <h5 class="fw-bold mb-3">Envianos un mensaje</h5>
@@ -50,13 +66,16 @@
                       type="text"
                       class="form-control"
                       placeholder="Nombre*"
+                      required
                     />
                   </div>
+
                   <div class="mb-3">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Apellido*"
+                      required
                     />
                   </div>
 
@@ -65,34 +84,46 @@
                       type="email"
                       class="form-control"
                       placeholder="Correo electrónico*"
+                      required
                     />
                   </div>
+
                   <div class="mb-3">
                     <input
-                      type="number"
+                      type="tel"
                       class="form-control"
                       placeholder="Teléfono*"
+                      inputmode="numeric"
+                      pattern="[0-9]{7,15}"
+                      title="Ingresá solo números (entre 7 y 15 dígitos)"
+                      required
                     />
                   </div>
+
                   <div class="mb-3">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Empresa*"
+                      required
                     />
                   </div>
+
                   <div class="mb-3">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Sitio Web*"
+                      required
                     />
                   </div>
+
                   <div class="mb-3">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Asunto*"
+                      required
                     />
                   </div>
 
@@ -101,6 +132,9 @@
                       rows="4"
                       class="form-control"
                       placeholder="Escribí tu mensaje...*"
+                      minlength="10"
+                      maxlength="500"
+                      required
                     ></textarea>
                   </div>
 
@@ -114,11 +148,9 @@
         </div>
       </section>
 
-      <!-- SECCIÓN 2: Mapa + Información -->
       <section class="py-5 bg-light">
         <div class="container">
           <div class="row align-items-center">
-            <!-- Columna izquierda: Mapa -->
             <div class="col-md-6 mb-4">
               <div class="shadow-sm rounded overflow-hidden">
                 <iframe
@@ -134,7 +166,6 @@
               </div>
             </div>
 
-            <!-- Columna derecha: Información -->
             <div class="col-md-6">
               <h4 class="fw-bold mb-3">Encontranos aquí</h4>
 
