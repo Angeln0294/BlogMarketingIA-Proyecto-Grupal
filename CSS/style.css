@@ -1,0 +1,83 @@
+/*ESTILOS REGISTRO*/
+:root {
+  --color-primary: #111111; /* Botón principal: negro */
+  --color-accent: #6faf9a; /* Verde del proyecto */
+  --color-bg-page: #f5f7f9; /* Fondo suave */
+  --color-border-soft: #dee2e6;
+}
+
+/* Fondo general de la página de registro */
+.bg-page {
+  background-color: var(--color-bg-page);
+}
+
+/* Marca resaltada */
+.highlight-brand {
+  color: var(--color-accent);
+}
+
+/* Tarjeta de registro */
+.register-card {
+  border-radius: 1.5rem;
+  /* sombra más marcada */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Botón principal según guía de colores */
+.btn-primary-main {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary-main:hover,
+.btn-primary-main:focus {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+/* Botones "sociales" (estilo La Nación) */
+.btn-social {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  text-align: left;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.btn-social:hover,
+.btn-social:focus {
+  border-color: var(--color-accent);
+  color: #111111;
+}
+
+/* Separador "o ingresá con tu email" */
+/* Línea de los lados */
+.divider-line {
+  border-top: 1px solid #e0e4ea; /* gris clarito */
+  height: 0;
+}
+
+/* Texto centrado, sin que pase la línea por arriba */
+.divider-text {
+  white-space: nowrap;
+  background-color: #ffffff; /* tapa la línea por detrás */
+  padding: 0 0.75rem; /* deja aire a los costados */
+}
+
+/* Pequeños ajustes en móviles */
+@media (max-width: 767.98px) {
+  .register-card {
+    margin-top: 1rem;
+  }
+
+  .btn-social {
+    text-align: center;
+  }
+}
