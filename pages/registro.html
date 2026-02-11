@@ -39,7 +39,6 @@
     <main class="bg-page py-5">
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <!-- Columna izquierda: texto -->
           <div class="col-lg-6 mb-4">
             <h1 class="fw-bold mb-3">
               Creá tu cuenta en <span class="highlight-brand">DevMarketIA</span>
@@ -60,7 +59,6 @@
             </ul>
           </div>
 
-          <!-- Columna derecha: tarjeta de registro -->
           <div class="col-lg-5">
             <div class="register-card p-4 p-lg-5 bg-white rounded-4">
               <h2 class="h4 fw-bold mb-2 text-center">Creá tu cuenta</h2>
@@ -68,7 +66,6 @@
                 Accedé a contenidos exclusivos, beneficios y mucho más.
               </p>
 
-              <!-- Botones sociales (estilo La Nación) -->
               <div class="d-grid gap-2 mb-3">
                 <button type="button" class="btn btn-social w-100">
                   Registrarte con Google
@@ -78,7 +75,6 @@
                 </button>
               </div>
 
-              <!-- Separador -->
               <div class="divider d-flex align-items-center my-4">
                 <div class="flex-grow-1 divider-line"></div>
                 <span class="divider-text mx-2 small text-muted">
@@ -87,25 +83,31 @@
                 <div class="flex-grow-1 divider-line"></div>
               </div>
 
-              <!-- Formulario -->
               <form>
                 <div class="row">
                   <div class="col-md-6 mb-3">
-                    <label class="form-label" for="nombre">Nombre</label>
+                    <label class="form-label" for="nombreCompleto"
+                      >Nombre completo</label
+                    >
                     <input
                       type="text"
-                      id="nombre"
+                      id="nombreCompleto"
                       class="form-control"
-                      placeholder="Nombre"
+                      placeholder="Ej: Ana García"
+                      required
                     />
                   </div>
+
                   <div class="col-md-6 mb-3">
-                    <label class="form-label" for="apellido">Apellido</label>
+                    <label class="form-label" for="username"
+                      >Nombre de usuario</label
+                    >
                     <input
                       type="text"
-                      id="apellido"
+                      id="username"
                       class="form-control"
-                      placeholder="Apellido"
+                      placeholder="Ej: ana.dev"
+                      required
                     />
                   </div>
                 </div>
@@ -119,6 +121,7 @@
                     id="email"
                     class="form-control"
                     placeholder="nombre@ejemplo.com"
+                    required
                   />
                 </div>
 
@@ -129,13 +132,15 @@
                       type="password"
                       id="password"
                       class="form-control"
-                      placeholder="••••••••"
+                      placeholder="Mínimo 8 caracteres"
+                      minlength="8"
+                      required
                     />
                     <div class="form-text">
-                      Mínimo 8 caracteres. Recomendamos combinar letras y
-                      números.
+                      Debe tener al menos 8 caracteres.
                     </div>
                   </div>
+
                   <div class="col-md-6 mb-3">
                     <label class="form-label" for="password2"
                       >Repetir contraseña</label
@@ -144,7 +149,9 @@
                       type="password"
                       id="password2"
                       class="form-control"
-                      placeholder="••••••••"
+                      placeholder="Repite la contraseña"
+                      minlength="8"
+                      required
                     />
                   </div>
                 </div>
@@ -153,8 +160,10 @@
                   <label class="form-label" for="intereses"
                     >¿Qué temas te interesan?</label
                   >
-                  <select id="intereses" class="form-select">
-                    <option selected disabled>Elegí una opción</option>
+                  <select id="intereses" class="form-select" required>
+                    <option value="" selected disabled>
+                      Elegir una opción
+                    </option>
                     <option>Marketing Digital</option>
                     <option>IA para contenidos</option>
                     <option>Automatización y funnels</option>
@@ -173,7 +182,7 @@
                   </label>
                 </div>
 
-                <div class="form-check mb-3">
+                <div class="form-check mb-4">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -181,26 +190,17 @@
                     required
                   />
                   <label class="form-check-label" for="terminos">
-                    Acepto los
-                    <a href="#" class="link-primary">Términos y Condiciones</a>
-                    y la
-                    <a href="#" class="link-primary">Política de privacidad</a>.
+                    Acepto los términos y condiciones.
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary-main w-100 mb-2">
+                <button class="btn btn-primary-main w-100" type="submit">
                   Crear cuenta
                 </button>
 
-                <p class="small text-secondary text-center mb-3">
-                  Podés darte de baja de los emails cuando quieras.
-                </p>
-
-                <p class="text-center mb-0">
+                <p class="text-center mb-0 mt-3">
                   ¿Ya tenés cuenta?
-                  <a href="./login.html" class="link-primary">
-                    Iniciar sesión
-                  </a>
+                  <a href="./login.html" class="link-primary">Iniciar sesión</a>
                 </p>
               </form>
             </div>
