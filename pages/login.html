@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Iniciar sesión | DevMarketIA</title>
+    <meta
+      name="description"
+      content="Accedé a tu cuenta de DevMarketIA para guardar artículos, seguir tus temas favoritos y gestionar tus preferencias."
+    />
+    <meta name="author" content="Equipo DevMarketIA" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Estilos globales del proyecto (incluye fuente Nunito Sans) -->
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <main class="bg-page login-main py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <!-- Columna izquierda: formulario -->
+          <div class="col-lg-5 mb-4">
+            <div class="login-card p-4 p-lg-5 bg-white rounded-4">
+              <h1 class="h3 fw-bold mb-2 text-center">
+                Iniciá sesión en
+                <span class="highlight-brand">DevMarketIA</span>
+              </h1>
+              <p class="text-muted small text-center mb-4">
+                Accedé a tus contenidos guardados y seguí de cerca las últimas
+                tendencias en marketing, datos e IA.
+              </p>
+
+              <!-- Botones sociales -->
+              <div class="d-grid gap-2 mb-3">
+                <button type="button" class="btn btn-social w-100">
+                  Ingresar con Google
+                </button>
+                <button type="button" class="btn btn-social w-100">
+                  Ingresar con Facebook
+                </button>
+              </div>
+
+              <!-- Separador -->
+              <div class="divider d-flex align-items-center my-4">
+                <div class="flex-grow-1 divider-line"></div>
+                <span class="divider-text mx-2 small text-muted">
+                  o ingresá con tu email
+                </span>
+                <div class="flex-grow-1 divider-line"></div>
+              </div>
+
+              <!-- Formulario de login -->
+              <form class="login-form">
+                <div class="mb-3">
+                  <label class="form-label" for="email">
+                    Correo electrónico
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="nombre@ejemplo.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+
+                <div class="mb-2">
+                  <label class="form-label" for="password"> Contraseña </label>
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    placeholder="Mínimo 8 caracteres"
+                    minlength="8"
+                    autocomplete="current-password"
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="recordarme"
+                    />
+                    <label class="form-check-label" for="recordarme">
+                      Recordarme
+                    </label>
+                  </div>
+
+                  <!-- Link que abre el modal -->
+                  <button
+                    type="button"
+                    class="btn btn-link btn-sm p-0 link-password"
+                    data-bs-toggle="modal"
+                    data-bs-target="#passwordRecoveryModal"
+                  >
+                    ¿Olvidaste tu contraseña?
+                  </button>
+                </div>
+
+                <button class="btn btn-primary-main w-100" type="submit">
+                  Iniciar sesión
+                </button>
+
+                <p class="text-center mb-0 mt-3 small">
+                  ¿Todavía no tenés cuenta?
+                  <a href="./registro.html" class="link-primary">
+                    Crear cuenta
+                  </a>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!-- Columna derecha: imagen -->
+          <div class="col-lg-6">
+            <div class="login-image-wrapper text-center">
+              <img
+                src="../img/pexels-cottonbro-4065877.jpg"
+                alt="Profesional revisando paneles de datos y campañas digitales"
+                class="img-fluid login-hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal para recuperar contraseña -->
+    <div
+      class="modal fade"
+      id="passwordRecoveryModal"
+      tabindex="-1"
+      aria-labelledby="passwordRecoveryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="passwordRecoveryModalLabel">
+              Recuperar contraseña
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="small text-secondary mb-3">
+              Ingresá el correo con el que te registraste en DevMarketIA y te
+              vamos a enviar un email con los pasos para restablecer tu
+              contraseña.
+            </p>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label" for="recoveryEmail">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  id="recoveryEmail"
+                  class="form-control"
+                  placeholder="nombre@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary-main w-100">
+                Enviar instrucciones
+              </button>
+            </form>
+
+            <p class="small text-muted mt-3 mb-0">
+              Si no encontrás el correo, revisá también la carpeta de spam o
+              promociones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
