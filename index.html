@@ -24,7 +24,7 @@
     <header>
       <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="index.html"
             ><span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
             DevMarket IA</a
           >
@@ -41,29 +41,29 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <!-- Botón Login -->
+              <!-- Botón Contacto -->
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <!-- Botón acerca de nosotros -->
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/acerca de nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <!-- Botón login -->
               <li class="nav-item">
                 <a class="nav-link" href="./pages/login.html">Login</a>
               </li>
               <!-- Botón Suscripción (abre modal) -->
-              <li class="nav-item">
+              <li class="nav-item d-flex align-items-center">
                 <button
-                  class="btn btn-outline-light nav-link"
+                  class="btn btn-suscripcion-rojo"
                   data-bs-toggle="modal"
                   data-bs-target="#suscripcionModal"
                 >
                   Suscripción
                 </button>
-              </li>
-              <!-- Botón Contacto -->
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-              </li>
-              <!-- Botón Acerca de nosotros -->
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/acerca.html"
-                  >Acerca de nosotros</a
-                >
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre</label>
+                  <label for="nombre" class="form-label">Nombre y Apellido</label>
                   <input
                     type="text"
                     class="form-control"
@@ -103,7 +103,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label"
-                    >Correo electrónico</label
+                    >Correo Electrónico</label
                   >
                   <input
                     type="email"
@@ -119,15 +119,14 @@
             </div>
             <div class="text-center">
               <p>O ingresa con:</p>
-              <a href="#" class="btn btn-primary w-100 mb-2">
-                <i class="fab fa-facebook-f"></i> Facebook
-              </a>
-              <a href="#" class="btn btn-danger w-100 mb-2">
-                <i class="fab fa-google"></i> Google
-              </a>
-              <a href="#" class="btn btn-info w-100 mb-2 text-white">
-                <i class="fab fa-twitter"></i> Twitter
-              </a>
+              <div class="d-grid gap-2 mb-3 btn-social">
+                <button type="button" class="text-center btn btn-social w-100">
+                  Registrarte con Google
+                </button>
+                <button type="button" class="text-center btn btn-social w-100">
+                  Registrarte con Facebook
+                </button>
+              </div>
             </div>
           </div>
         </div>
