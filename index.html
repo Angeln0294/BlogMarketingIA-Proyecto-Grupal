@@ -42,25 +42,48 @@
     <header></header>
     <main>
       <section>
-        <!-- Banner / Slider -->
-        <div class="bg-light text-center py-5">
-          <h1>
-            DevMarket AI: Tu Guía Definitiva para Programación, Marketing e IA
-          </h1>
-          <p class="lead">
-            Artículos, tendencias y consejos prácticos para crecer en la era
-            digital.
-          </p>
-
-          <form class="d-flex justify-content-center mt-3">
-            <input
-              class="form-control w-50 me-2"
-              type="search"
-              placeholder="Buscar artículos..."
-              required
-            />
-            <button class="btn btn-dark">Buscar</button>
-          </form>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img
+                src="img/banner/pexels-walls-io-440716388-15555796.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/banner/pexels-n-voitkevich-8062289.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="img/banner/pexels-mikael-blomkvist-6476260.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
       <!-- Contenido principal -->
@@ -78,7 +101,7 @@
                     <img
                       src="img/pexels-a-darmel-7710139.jpg"
                       class="img-fluid rounded-start h-100"
-                      style="object-fit: cover;"
+                      style="object-fit: cover"
                       alt="Reunión estratégica de marketing digital revisando reportes de rendimiento y estadísticas de ventas en tiempo real."
                     />
                   </div>
@@ -178,6 +201,9 @@
                     <a class="page-link" href="#">1</a>
                   </li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
                   <li class="page-item">
                     <a class="page-link" href="#">Siguiente</a>
                   </li>
