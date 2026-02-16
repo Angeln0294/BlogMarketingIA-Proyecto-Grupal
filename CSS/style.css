@@ -18,6 +18,9 @@
     /* elimina espacios fantasmas */
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {      
+    filter: invert(1);
+} 
 /* ajuste de imagenes del carousel para dispositivos grandes */
 @media (max-width: 992px) {
     .carousel-img {
