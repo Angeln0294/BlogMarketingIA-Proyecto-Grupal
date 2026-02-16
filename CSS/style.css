@@ -1,0 +1,45 @@
+/* Evita que el carrusel se desborde */
+#carousel-DivMarketIA {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Ajusta las imágenes */
+.carousel-img {
+    width: 100%;
+    /* nunca más ancho que el contenedor */
+    max-width: 100%;
+    /* asegura que no se desborde */
+    height: 500px;
+    /* altura fija en desktop */
+    object-fit: cover;
+    /* recorta manteniendo proporción */
+    display: block;
+    /* elimina espacios fantasmas */
+}
+
+/* ajuste de imagenes del carousel para dispositivos grandes */
+@media (max-width: 992px) {
+    .carousel-img {
+        height: 250px;
+    }
+}
+
+/* En móviles, reduce la altura */
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 300px;
+    }
+}
+
+/* Elimina scroll horizontal global */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}

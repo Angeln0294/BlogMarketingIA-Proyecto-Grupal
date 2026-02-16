@@ -41,51 +41,73 @@
   <body>
     <header></header>
     <main>
-      <section>
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <img
-                src="img/banner/pexels-walls-io-440716388-15555796.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/banner/pexels-n-voitkevich-8062289.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item active">
-              <img
-                src="img/banner/pexels-mikael-blomkvist-6476260.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
+      <section id="carousel-DivMarketIA" class="carousel slide">
+        <div class="carousel-indicators">
           <button
-            class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
+            data-bs-target="#carousel-DivMarketIA"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
           <button
-            class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            data-bs-target="#carousel-DivMarketIA"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-DivMarketIA"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/banner/pexels-walls-io-440716388-15555796.jpg"
+              class="carousel-img"
+              alt="Banner 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/banner/pexels-n-voitkevich-8062289.jpg"
+              class="carousel-img"
+              alt="Banner 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/banner/pexels-mikael-blomkvist-6476260.jpg"
+              class="carousel-img"
+              alt="Banner 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-DivMarketIA"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-DivMarketIA"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </section>
+
       <!-- Contenido principal -->
       <div class="container my-5">
         <div class="row">
