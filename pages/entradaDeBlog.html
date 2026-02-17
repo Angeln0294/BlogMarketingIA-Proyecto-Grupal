@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Entrada del blog BlogTeam: programación, marketing e IA." />
+    <meta name="author" content="BlogTeam" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/entradaDeBlog.css" />
+
+    <title>DevMarket IA — Entrada</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
+            DevMarket IA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./acerca de nosotros.html">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <button
+                  class="btn btn-suscripcion-rojo"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                >
+                  Suscripción
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="modal fade"
+        id="suscripcionModal"
+        tabindex="-1"
+        aria-labelledby="suscripcionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suscripcionModalLabel">
+                Suscríbete a nuestro Blog
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="subNombre" class="form-label">Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="subNombre" required />
+                </div>
+                <div class="mb-3">
+                  <label for="subEmail" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="subEmail" required />
+                </div>
+                <button type="submit" class="btn btn-primary-main w-100">
+                  Suscribirme
+                </button>
+              </form>
+
+              <div class="text-center mt-3">
+                <p class="mb-2">O ingresa con:</p>
+                <div class="d-grid gap-2 mb-2">
+                  <button type="button" class="btn btn-social w-100">
+                    Registrarte con Google
+                  </button>
+                  <button type="button" class="btn btn-social w-100">
+                    Registrarte con Facebook
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-image" aria-label="Imagen principal">
+      <img
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1800&q=70&sat=-100"
+        alt="Trabajo en programación en blanco y negro"
+      />
+    </section>
+
+    <main class="container content-wrap">
+      <div class="row g-4">
+        <article class="col-lg-8">
+          <nav class="breadcrumb-small" aria-label="breadcrumb">
+            <a href="../index.html" class="crumb-link">Inicio</a>
+            <span class="crumb-sep">›</span>
+            <a href="./categorias.html" class="crumb-link">Programación</a>
+            <span class="crumb-sep">›</span>
+            <span class="crumb-current">10 Mejores Prácticas de Programación en 2026</span>
+          </nav>
+
+          <h1 class="post-title">10 Mejores Prácticas de Programación en 2026</h1>
+
+          <div class="post-meta">
+            <div class="meta-left">
+              <img class="avatar" src="https://i.pravatar.cc/64?img=12" alt="Avatar del autor" />
+              <div>
+                <div class="meta-line">
+                  <span class="meta-cat">Programación</span>
+                  <span class="meta-dot">·</span>
+                  <span class="meta-author">Juan Pérez</span>
+                  <span class="meta-dot">·</span>
+                  <span class="meta-time">hace 3 días</span>
+                </div>
+                <div class="meta-author-small">Juan Pérez</div>
+              </div>
+            </div>
+          </div>
+
+          <p class="post-intro">
+            El mundo de la programación está en constante cambio y mantenerse actualizado con las
+            mejores prácticas es fundamental para ser un desarrollador exitoso. En esta entrada,
+            exploraremos recomendaciones actuales para escribir código de alta calidad, eficiente y
+            seguro.
+          </p>
+
+          <section class="post-section">
+            <h2>1. Escribe Código Limpio y Legible</h2>
+            <p>
+              Prioriza nombres claros, evita duplicación, y mantené funciones pequeñas. Un código
+              legible facilita el mantenimiento y reduce errores.
+            </p>
+          </section>
+
+          <section class="post-section">
+            <h2>2. Utiliza el Control de Versiones</h2>
+            <p>
+              Git te permite colaborar, revertir cambios y mantener historial. Trabajá con ramas y
+              commits descriptivos.
+            </p>
+          </section>
+
+          <section class="post-section">
+            <h2>3. Realiza Pruebas Automatizadas</h2>
+            <p>
+              Las pruebas unitarias e integración aumentan la confianza y previenen regresiones
+              cuando el proyecto crece.
+            </p>
+          </section>
+
+          <section class="post-section">
+            <h2>4. Comprende y Aplica Principios SOLID</h2>
+            <p>
+              Mejora la mantenibilidad del software con responsabilidad única, interfaces claras y
+              desacoplamiento.
+            </p>
+          </section>
+
+          <section class="post-section">
+            <h2>5. Documenta tu Código</h2>
+            <p>
+              Documentación mínima pero útil: README, comentarios donde aporten valor, y ejemplos
+              de uso.
+            </p>
+          </section>
+
+          <section class="post-section">
+            <h2>6. Mantén tu Código Seguro</h2>
+            <p>
+              Validá entradas, evitá exponer secretos, y usá librerías confiables. Actualizá
+              dependencias periódicamente.
+            </p>
+          </section>
+
+          <section class="post-media" aria-label="Video relacionado">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/pTB0EiLXUC8"
+                title="Video de buenas prácticas"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+
+          <section class="comments" aria-label="Comentarios">
+            <h3 class="comments-title">Comentarios</h3>
+
+            <form class="comment-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="cNombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    id="cNombre"
+                    class="form-control"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cCorreo" class="form-label">Correo</label>
+                  <input
+                    type="email"
+                    id="cCorreo"
+                    class="form-control"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="cMensaje" class="form-label">Comentario</label>
+                  <textarea
+                    id="cMensaje"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Añade tu comentario..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-main">
+                    Enviar comentario
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div class="comment-list" aria-label="Lista de comentarios">
+              <article class="comment">
+                <img
+                  class="comment-avatar"
+                  src="https://i.pravatar.cc/56?img=32"
+                  alt="Avatar Laura Gómez"
+                />
+                <div class="comment-body">
+                  <div class="comment-top">
+                    <strong>Laura Gómez</strong>
+                    <span class="comment-time">hace 2 días</span>
+                  </div>
+                  <p>
+                    Excelente artículo, muy claro y práctico. Me ayudó a ordenar mi forma de
+                    trabajar día a día. ¡Gracias por compartir!
+                  </p>
+                  <button class="comment-reply" type="button">Responder</button>
+                </div>
+              </article>
+
+              <article class="comment">
+                <img
+                  class="comment-avatar"
+                  src="https://i.pravatar.cc/56?img=45"
+                  alt="Avatar Martina Soto"
+                />
+                <div class="comment-body">
+                  <div class="comment-top">
+                    <strong>Martina Soto</strong>
+                    <span class="comment-time">hace 3 días</span>
+                  </div>
+                  <p>
+                    Muy buenas prácticas, especialmente las relacionadas con SOLID. Fundamental
+                    tenerlas presentes para escribir buen código.
+                  </p>
+                  <button class="comment-reply" type="button">Responder</button>
+                </div>
+              </article>
+
+              <article class="comment">
+                <img
+                  class="comment-avatar"
+                  src="https://i.pravatar.cc/56?img=16"
+                  alt="Avatar Ana Linares"
+                />
+                <div class="comment-body">
+                  <div class="comment-top">
+                    <strong>Ana Linares</strong>
+                    <span class="comment-time">hace 3 días</span>
+                  </div>
+                  <p>
+                    Gracias por compartir estos consejos. La parte de pruebas automatizadas me
+                    parece clave para evitar errores en producción.
+                  </p>
+                  <button class="comment-reply" type="button">Responder</button>
+                </div>
+              </article>
+
+              <article class="comment">
+                <img
+                  class="comment-avatar"
+                  src="https://i.pravatar.cc/56?img=48"
+                  alt="Avatar Daniela Fernández"
+                />
+                <div class="comment-body">
+                  <div class="comment-top">
+                    <strong>Daniela Fernández</strong>
+                    <span class="comment-time">hace 5 días</span>
+                  </div>
+                  <p>
+                    Buenísimo el enfoque de seguridad. A veces lo dejamos para el final y después
+                    cuesta mucho más corregir.
+                  </p>
+                  <button class="comment-reply" type="button">Responder</button>
+                </div>
+              </article>
+
+              <article class="comment">
+                <img
+                  class="comment-avatar"
+                  src="https://i.pravatar.cc/56?img=50"
+                  alt="Avatar Camila Ruiz"
+                />
+                <div class="comment-body">
+                  <div class="comment-top">
+                    <strong>Camilo Ruiz</strong>
+                    <span class="comment-time">hace 1 semana</span>
+                  </div>
+                  <p>
+                    Me gustó que incluyeran documentación y control de versiones. Es lo primero
+                    que debería implementarse en proyectos en equipo.
+                  </p>
+                  <button class="comment-reply" type="button">Responder</button>
+                </div>
+              </article>
+            </div>
+          </section>
+        </article>
+
+        <aside class="col-lg-4">
+          <div class="widget">
+            <div class="searchbox" role="search">
+              <input
+                type="search"
+                class="search-input"
+                placeholder="Buscar artículos..."
+                aria-label="Buscar artículos"
+              />
+              <button class="search-btn" type="button" aria-label="Buscar">⌕</button>
+            </div>
+          </div>
+
+          <div class="widget">
+            <h3 class="widget-title">Categorías</h3>
+            <div class="cat-list">
+              <div class="cat-row">
+                <span class="cat-pill cat-pill--green">Programación</span>
+                <span class="cat-count">8</span>
+              </div>
+              <div class="cat-row">
+                <span class="cat-pill">Inteligencia Artificial</span>
+                <span class="cat-count">5</span>
+              </div>
+              <div class="cat-row">
+                <span class="cat-pill">Marketing</span>
+                <span class="cat-count">7</span>
+              </div>
+              <div class="cat-row">
+                <span class="cat-pill">Desarrollo Web</span>
+                <span class="cat-count">4</span>
+              </div>
+              <div class="cat-row">
+                <span class="cat-pill">SEO</span>
+                <span class="cat-count">6</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
