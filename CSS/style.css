@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.color-blog {
+    background-color: #6FAF9A;
+}
+
+.btn-suscripcion-rojo {
+    /* Color de fuente y borde más suave para integrar con el gris del menú */
+    color: #d9534f !important; 
+    border: 1px solid #eecaca !important; /* Borde más fino (1px) */
+    
+    background-color: transparent;
+    border-radius: 50px; 
+    
+    /* Ajuste de tamaño para nivelar con los otros textos */
+    padding: 4px 18px !important; 
+    font-size: 0.95rem; /* Ajusta este valor si tus otros links son más chicos */
+    font-weight: 500;
+    
+    /* Alineación vertical */
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-suscripcion-rojo:hover {
+    background-color: #fdf2f2;
+    border-color: #d9534f !important;
+}
+
+.btn-social {
+    background-color: #ffffff;
+    border: 1px solid var(--color-border-soft);
+    border-radius: 999px;
+    padding: 0.6rem 1.3rem;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.btn-social:hover,
+.btn-social:focus {
+    border-color: var(--color-accent);
+    color: #111111;
+}
+
+@media (max-width: 767.98px) {
+    .btn-social {
+        text-align: center;
+    }
+}

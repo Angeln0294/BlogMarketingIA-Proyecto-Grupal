@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conocé al equipo detrás de DevMarket IA: programación, marketing e inteligencia artificial."
+    />
+    <meta name="author" content="DevMarket IA" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/nosotros.css" />
+    <title>DevMarket IA — Nosotros</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
+            DevMarket IA
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+
+              <li class="nav-item d-flex align-items-center">
+                <button
+                  class="btn btn-suscripcion-rojo"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                  type="button"
+                >
+                  Suscripción
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="modal fade"
+        id="suscripcionModal"
+        tabindex="-1"
+        aria-labelledby="suscripcionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suscripcionModalLabel">
+                Suscríbete a nuestro Blog
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="subNombre" class="form-label"
+                    >Nombre y Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subNombre"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subEmail" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="subEmail"
+                    required
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">
+                  Suscribirme
+                </button>
+              </form>
+
+              <div class="text-center mt-3">
+                <p class="mb-2">O ingresa con:</p>
+                <div class="d-grid gap-2 mb-3">
+                  <button
+                    type="button"
+                    class="text-center btn btn-social w-100"
+                  >
+                    Registrarte con Google
+                  </button>
+                  <button
+                    type="button"
+                    class="text-center btn btn-social w-100"
+                  >
+                    Registrarte con Facebook
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="nb-offset">
+      <section class="about-hero">
+        <div class="container about-hero__inner">
+          <h1 class="about-title">Nosotros</h1>
+
+          <p class="about-lead">
+            Somos un equipo apasionado por la tecnología y el desarrollo. Cada
+            día combinamos nuestras habilidades para crear contenido claro,
+            práctico y útil, con ideas que inspiran y ayudan a otros a crecer en
+            el mundo digital.
+          </p>
+
+          <blockquote class="about-quote">
+            “Juntos construimos, aprendemos y crecemos cada día.”
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="about-body">
+        <div class="container">
+          <h2 class="section-title">Conocé a Nuestro Equipo</h2>
+
+          <p class="section-text">
+            Nos enorgullece ser un equipo diverso con experiencia en
+            programación, marketing e inteligencia artificial. Creemos en la
+            comunicación clara, la colaboración y la mejora continua. Nuestro
+            objetivo es fomentar una comunidad de aprendizaje, donde cada
+            miembro aporte su mirada y su experiencia para alcanzar metas en
+            conjunto.
+          </p>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Foto de Judith Bertolini"
+              />
+              <h3 class="team-name">Judith Bertolini</h3>
+              <p class="team-role">Ingeniera en Software</p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Foto de Esteban Fabricio Vellido"
+              />
+              <h3 class="team-name">Esteban Fabricio Vellido</h3>
+              <p class="team-role">Especialista en IA</p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/59.jpg"
+                alt="Foto de Angel Nader"
+              />
+              <h3 class="team-name">Angel Nader</h3>
+              <p class="team-role">Marketing Digital</p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Foto de Guadalupe Pereyra"
+              />
+              <h3 class="team-name">Guadalupe Pereyra</h3>
+              <p class="team-role">Desarrolladora Web</p>
+            </article>
+          </div>
+
+          <p class="about-foot">
+            Bienvenido a nuestro blog. Estamos para compartir experiencias y
+            aprendizajes, y acompañarte en tu camino para crecer en tecnología.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
