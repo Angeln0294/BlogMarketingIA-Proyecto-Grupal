@@ -5,6 +5,34 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+/* Estilos del navbar */
+.color-blog {
+    background-color: #6FAF9A;
+}
+
+.btn-suscripcion-rojo {
+    /* Color de fuente y borde más suave para integrar con el gris del menú */
+    color: #d9534f !important; 
+    border: 1px solid #eecaca !important; /* Borde más fino (1px) */
+    
+    background-color: transparent;
+    border-radius: 50px; 
+    
+    /* Ajuste de tamaño para nivelar con los otros textos */
+    padding: 4px 18px !important; 
+    font-size: 0.95rem; /* Ajusta este valor si tus otros links son más chicos */
+    font-weight: 500;
+    
+    /* Alineación vertical */
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-suscripcion-rojo:hover {
+    background-color: #fdf2f2;
+    border-color: #d9534f !important;
+}
 
 .btn-primary-solid {
   background-color: #000000;
