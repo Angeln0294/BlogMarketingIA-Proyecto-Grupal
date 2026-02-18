@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: #111111;
+}
+
+/* =========================
+   VARIABLES DEL PROYECTO
+   ========================= */
+:root {
+  --color-primary: #111111;        /* Botón principal: negro */
+  --color-accent: #6faf9a;         /* Verde de marca DevMarketIA */
+  --color-bg-page: #f5f7f9;        /* Fondo suave */
+  --color-border-soft: #dee2e6;    /* Bordes suaves */
+}
+
+/* =========================
+   NAVBAR (fixed-top)
+   ========================= */
+
+.navbar {
+  background-color: #ffffff; /* para que no sea transparente */
+}
+
+.color-blog {
+  background-color: #6faf9a;
+}
+
+/* Botón de suscripción en navbar */
+.btn-suscripcion-rojo {
+  color: #d9534f !important;
+  border: 1px solid #eecaca !important;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 4px 18px !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-suscripcion-rojo:hover {
+  background-color: #fdf2f2;
+  border-color: #d9534f !important;
+}
+.row{
+  margin-top: 60px;
+}
+/* =========================
+   ESTILOS GENERALES LOGIN
+   ========================= */
+
+.bg-page {
+  background-color: var(--color-bg-page);
+}
+
+.highlight-brand {
+  color: var(--color-accent);
+}
+
+/* Margen superior para compensar el navbar fixed-top */
+.login-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.login-card {
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary-main {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary-main:hover,
+.btn-primary-main:focus {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+/* Botones sociales con íconos centrados */
+.btn-social {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+/* contenedor del ícono para que no deforme el botón */
+.btn-social .social-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+  border-color: var(--color-accent);
+  color: #111111;
+}
+
+/* Separador "o ingresá con tu email" */
+.divider-line {
+  border-top: 1px solid #e0e4ea;
+  height: 0;
+}
+
+.divider-text {
+  white-space: nowrap;
+  background-color: #ffffff;
+  padding: 0 0.75rem;
+}
+
+.link-password {
+  font-size: 0.85rem;
+  text-decoration: underline;
+  color: #111111;
+}
+
+.link-password:hover,
+.link-password:focus {
+  color: var(--color-accent);
+}
+
+.login-image-wrapper {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.login-hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 767.98px) {
+  .login-main {
+    padding-top: 4.5rem; /* un poco menos en mobile */
+    align-items: flex-start;
+  }
+
+  /* en mobile NO mostramos la imagen */
+  .login-image-wrapper {
+    display: none;
+  }
+
+  .btn-social {
+    text-align: center;
+  }
+}
+
