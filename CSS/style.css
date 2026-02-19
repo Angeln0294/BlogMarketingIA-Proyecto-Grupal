@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 :root {
-  --color-border-soft: #dee2e6;   /* gris suave del borde */
-  --color-accent: #6faf9a;        /* verde del proyecto */
+    --color-border-soft: #dee2e6;
+    /* gris suave del borde */
+    --color-accent: #6faf9a;
+    /* verde del proyecto */
 }
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -13,17 +17,19 @@ body {
 
 .btn-suscripcion-rojo {
     /* Color de fuente y borde más suave para integrar con el gris del menú */
-    color: #d9534f !important; 
-    border: 1px solid #eecaca !important; /* Borde más fino (1px) */
-    
+    color: #d9534f !important;
+    border: 1px solid #eecaca !important;
+    /* Borde más fino (1px) */
+
     background-color: transparent;
-    border-radius: 50px; 
-    
+    border-radius: 50px;
+
     /* Ajuste de tamaño para nivelar con los otros textos */
-    padding: 4px 18px !important; 
-    font-size: 0.95rem; /* Ajusta este valor si tus otros links son más chicos */
+    padding: 4px 18px !important;
+    font-size: 0.95rem;
+    /* Ajusta este valor si tus otros links son más chicos */
     font-weight: 500;
-    
+
     /* Alineación vertical */
     display: inline-flex;
     align-items: center;
@@ -34,6 +40,7 @@ body {
     background-color: #fdf2f2;
     border-color: #d9534f !important;
 }
+
 /* Botones "sociales" (Google / Facebook) */
 .btn-social {
     background-color: #ffffff;
@@ -50,11 +57,12 @@ body {
     border-color: var(--color-accent);
     color: #111111;
 }
+
 /* Ajuste en móviles: centrar texto */
 @media (max-width: 767.98px) {
-  .btn-social {
-    text-align: center;
-  }
+    .btn-social {
+        text-align: center;
+    }
 }
 
 /* Evita que el carrusel se desborde */
@@ -77,9 +85,11 @@ body {
     /* elimina espacios fantasmas */
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {      
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     filter: invert(1);
-} 
+}
+
 /* ajuste de imagenes del carousel para dispositivos grandes */
 @media (max-width: 992px) {
     .carousel-img {
@@ -104,4 +114,31 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
+}
+
+/*color de seccion de paginacion*/
+/* Color general de los números */
+.pagination .page-link {
+    color: #6FAF9A;
+    /* Verde suave */
+}
+
+/* Número activo */
+.pagination .page-item.active .page-link {
+    background-color: #6FAF9A;
+    /* Fondo verde */
+    border-color: #6FAF9A;
+    color: #fff;
+    /* Texto blanco para contraste */
+}
+
+/* Hover sobre los números */
+.pagination .page-link:hover {
+    color: #4e8c77;
+    /* Verde más oscuro al pasar el mouse */
+}
+
+/* Opcional: deshabilitado más tenue */
+.pagination .page-item.disabled .page-link {
+    color: #ccc;
 }
