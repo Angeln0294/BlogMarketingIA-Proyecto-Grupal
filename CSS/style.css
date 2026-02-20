@@ -58,6 +58,45 @@ body {
     color: #111111;
 }
 
+/* Estilo para el contenedor del carrusel */
+.carousel-caption-custom {
+    border: 1px solid rgba(110, 175, 154, 0.3); /* Un borde muy sutil del mismo verde */
+    padding: 2rem !important;
+}
+
+/* Estilo para el contenedor del carrusel */
+.carousel-caption-custom {
+    border: 1px solid rgba(110, 175, 154, 0.3); /* Un borde muy sutil del mismo verde */
+    padding: 2rem !important;
+}
+
+/* Estilo para el H1 con tu color específico */
+.h1-verde {
+    color: #6FAF9A !important;
+    font-size: 42px !important; /* Dentro del rango 36-48px */
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mayor legibilidad */
+    letter-spacing: -1px;
+}
+
+/* Estilo para el párrafo */
+.p-verde {
+    color: #cbdad5 !important; /* Un verde muy clarito, casi gris, para que armonice */
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Decoración extra: línea divisoria */
+.h1-verde::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #6FAF9A;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
 /* Ajuste en móviles: centrar texto */
 @media (max-width: 767.98px) {
     .btn-social {
@@ -141,4 +180,17 @@ body {
 /* Opcional: deshabilitado más tenue */
 .pagination .page-item.disabled .page-link {
     color: #ccc;
+}
+
+.list-group-item a {
+  display: block;
+  color: #6FAF9A;       /* verde del proyecto */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.list-group-item a:hover {
+  color: #0d6efd;       /* azul Bootstrap */
+  transform: translateX(5px); /* pequeño movimiento al pasar el mouse */
 }
