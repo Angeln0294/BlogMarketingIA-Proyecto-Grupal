@@ -5,29 +5,21 @@ body {
   color: #111111;
 }
 
-/* =========================
-   VARIABLES DEL PROYECTO
-   ========================= */
 :root {
-  --color-primary: #111111;        /* Botón principal: negro */
-  --color-accent: #6faf9a;         /* Verde de marca DevMarketIA */
-  --color-bg-page: #f5f7f9;        /* Fondo suave */
-  --color-border-soft: #dee2e6;    /* Bordes suaves */
+  --color-primary: #111111;      
+  --color-accent: #6faf9a;         
+  --color-bg-page: #f5f7f9;     
+  --color-border-soft: #dee2e6;   
 }
 
-/* =========================
-   NAVBAR (fixed-top)
-   ========================= */
-
 .navbar {
-  background-color: #ffffff; /* para que no sea transparente */
+  background-color: #ffffff; 
 }
 
 .color-blog {
   background-color: #6faf9a;
 }
 
-/* Botón de suscripción en navbar */
 .btn-suscripcion-rojo {
   color: #d9534f !important;
   border: 1px solid #eecaca !important;
@@ -45,12 +37,15 @@ body {
   background-color: #fdf2f2;
   border-color: #d9534f !important;
 }
+
+.btn-redes {
+  text-decoration: none;
+  color: #111111
+}
+
 .row{
   margin-top: 60px;
 }
-/* =========================
-   ESTILOS GENERALES LOGIN
-   ========================= */
 
 .bg-page {
   background-color: var(--color-bg-page);
@@ -60,7 +55,6 @@ body {
   color: var(--color-accent);
 }
 
-/* Margen superior para compensar el navbar fixed-top */
 .login-main {
   min-height: 100vh;
   display: flex;
@@ -89,7 +83,6 @@ body {
   color: #ffffff;
 }
 
-/* Botones sociales con íconos centrados */
 .btn-social {
   background-color: #ffffff;
   border: 1px solid var(--color-border-soft);
@@ -104,7 +97,6 @@ body {
   gap: 0.6rem;
 }
 
-/* contenedor del ícono para que no deforme el botón */
 .btn-social .social-icon {
   flex-shrink: 0;
   display: flex;
@@ -118,7 +110,6 @@ body {
   color: #111111;
 }
 
-/* Separador "o ingresá con tu email" */
 .divider-line {
   border-top: 1px solid #e0e4ea;
   height: 0;
@@ -153,16 +144,12 @@ body {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
 @media (max-width: 767.98px) {
   .login-main {
-    padding-top: 4.5rem; /* un poco menos en mobile */
+    padding-top: 4.5rem; 
     align-items: flex-start;
   }
 
-  /* en mobile NO mostramos la imagen */
   .login-image-wrapper {
     display: none;
   }
