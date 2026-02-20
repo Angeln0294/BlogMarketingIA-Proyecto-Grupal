@@ -75,7 +75,7 @@ body {
     color: #6FAF9A !important;
     font-size: 42px !important; /* Dentro del rango 36-48px */
     font-weight: 700 !important;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mayor legibilidad */
+    text-shadow: 2px 2px 4px #00000080; /* Sombra para mayor legibilidad */
     letter-spacing: -1px;
 }
 
