@@ -2,58 +2,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 
 .footer-dev {
-  background-color: #111111;   /* fondo oscuro */
+  background-color: #111111;  
   color: #f9fafb;
   font-size: 0.95rem;
-  margin-top: 3rem;
+  margin-top: 0;  
 }
 
-.footer-dev .footer-logo {
+.footer-logo-img {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.footer-logo {
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-.footer-logo-img {
-  width: 40px;      /* o 48px si la ves muy chica */
-  height: auto;
-  flex-shrink: 0;   /* para que no se deforme si el texto es largo */
+.footer-text {
+  color: #d1d5db;          
 }
 
-.footer-dev .footer-text {
-  color: #d1d5db; /* gris claro legible */
-}
-
-.footer-dev .footer-title {
+.footer-title {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
 }
 
-.footer-dev .footer-subtitle {
+.footer-subtitle {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #e5e7eb;
 }
 
-/* Listas de links */
-.footer-dev .footer-links li + li {
+.btn-footer-newsletter {
+  background-color: #6faf9a; 
+  border-color: #6faf9a;
+  color: #111111;
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-footer-newsletter:hover,
+.btn-footer-newsletter:focus {
+  background-color: #63a48e;
+  border-color: #63a48e;
+  color: #0b0b0b;
+}
+
+.footer-links li + li {
   margin-top: 0.35rem;
 }
 
-.footer-dev .footer-link {
+.footer-link {
   color: #e5e7eb;
   text-decoration: none;
 }
 
-.footer-dev .footer-link:hover,
-.footer-dev .footer-link:focus {
-  color: #6faf9a;             /* verde del proyecto */
+.footer-link:hover,
+.footer-link:focus {
+  color: #6faf9a;
   text-decoration: underline;
 }
 
-/* Redes sociales como pills */
-.footer-dev .footer-social-link {
+.footer-social-link {
   display: inline-block;
   padding: 0.25rem 0.6rem;
   border-radius: 999px;
@@ -63,48 +78,51 @@
   text-decoration: none;
 }
 
-.footer-dev .footer-social-link:hover,
-.footer-dev .footer-social-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   border-color: #6faf9a;
   color: #6faf9a;
 }
 
-/* Divider y franja inferior */
-.footer-dev .footer-divider {
+.footer-divider {
   border-color: #4b5563;
   opacity: 0.7;
 }
 
-.footer-dev .footer-bottom {
+.footer-bottom {
   align-items: flex-start;
 }
 
-.footer-dev .footer-bottom-links {
+.footer-bottom-text {
+  color: #e5e7eb;  
+}
+
+.footer-bottom-links {
   text-align: left;
 }
 
-.footer-dev .footer-bottom-link {
+.footer-bottom-link {
   color: #9ca3af;
   text-decoration: none;
 }
 
-.footer-dev .footer-bottom-link:hover,
-.footer-dev .footer-bottom-link:focus {
+.footer-bottom-link:hover,
+.footer-bottom-link:focus {
   color: #f9fafb;
   text-decoration: underline;
 }
 
-.footer-dev .footer-disclaimer {
+.footer-disclaimer {
   max-width: 680px;
+  color: #d1d5db;
 }
 
-/* Responsive pequeños ajustes */
 @media (max-width: 767.98px) {
   .footer-dev {
     text-align: left;
   }
 
-  .footer-dev .footer-bottom {
+  .footer-bottom {
     align-items: flex-start;
   }
 }
