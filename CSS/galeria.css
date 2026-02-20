@@ -1,32 +1,23 @@
-/* galeria.css — BlogTeam (paleta + tipografías + navbar bootstrap) */
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap");
 
 :root {
-  /* Paleta oficial */
   --bg: #ffffff;
   --soft-bg: #f4f6f8;
   --text: #2b2b2b;
   --muted: #78808c;
-  --primary: #1c385f;   /* Azul petróleo */
-  --secondary: #6faf9a; /* Verde salvia */
-  --accent: #f28c7a;    /* Coral suave */
+  --primary: #1c385f;
+  --secondary: #6faf9a;
+  --accent: #f28c7a;
   --line: #e6e9ee;
-
-  /* Compatibilidad con reglas del equipo */
   --color-accent: var(--secondary);
   --color-border-soft: #dee2e6;
-
-  /* UI */
   --radius: 14px;
   --shadow: 0 10px 30px rgba(43, 43, 43, 0.1);
-
-  /* Typography Rules */
-  --h1: 48px; /* Bold */
-  --h2: 32px; /* Semibold */
-  --h3: 24px; /* Semibold */
-  --body: 16px; /* Regular */
-  --meta: 14px; /* Small/metadata */
+  --h1: 48px;
+  --h2: 32px;
+  --h3: 24px;
+  --body: 16px;
+  --meta: 14px;
   --lh: 1.6;
 }
 
@@ -36,11 +27,11 @@
 
 body {
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background: var(--soft-bg);
   color: var(--text);
   line-height: var(--lh);
-  text-align: left; /* No usar texto justificado */
+  text-align: left;
 }
 
 .container {
@@ -48,7 +39,6 @@ body {
   margin: 0 auto;
 }
 
-/* Links (Azul petróleo) */
 .link {
   color: var(--primary);
   text-decoration: none;
@@ -60,7 +50,6 @@ body {
   text-decoration: underline;
 }
 
-/* Typography helpers */
 .h1 {
   font-size: var(--h1);
   font-weight: 700;
@@ -96,27 +85,25 @@ body {
   font-weight: 400;
 }
 
-/* ===== NAVBAR (Bootstrap) — reglas BlogTeam ===== */
 .navbar {
-  background: var(--bg) !important; /* Fondo blanco */
+  background: var(--bg) !important;
 }
 
 .navbar-brand,
 .navbar .nav-link {
-  color: var(--text) !important; /* Texto negro/gris oscuro */
+  color: var(--text) !important;
   font-weight: 600;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: var(--primary) !important; /* Hover azul petróleo */
+  color: var(--primary) !important;
 }
 
 .color-blog {
   background-color: var(--secondary);
 }
 
-/* Botón principal (global del proyecto) */
 .btn-primary-main {
   background-color: #000000 !important;
   color: #ffffff !important;
@@ -139,7 +126,6 @@ body {
   transform: translateY(0);
 }
 
-/* Suscripción en navbar: negro sobre blanco (minimalista) */
 .btn-suscripcion-rojo {
   color: #000000 !important;
   border: 1px solid var(--line) !important;
@@ -159,7 +145,6 @@ body {
   transform: translateY(-1px);
 }
 
-/* Botones sociales (Google/Facebook) */
 .btn-social {
   background-color: #ffffff;
   border: 1px solid var(--color-border-soft);
@@ -182,7 +167,6 @@ body {
   }
 }
 
-/* ===== HERO ===== */
 .hero {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.65)),
@@ -191,8 +175,6 @@ body {
   background-position: center;
   padding: 44px 0 28px;
   border-bottom: 1px solid rgba(230, 233, 238, 0.8);
-
-  /* Navbar fixed-top: evita que tape el contenido */
   padding-top: 90px;
 }
 
@@ -214,7 +196,6 @@ body {
   opacity: 0.7;
 }
 
-/* ===== TOOLBAR ===== */
 .toolbar {
   padding: 18px 0 22px;
 }
@@ -234,7 +215,6 @@ body {
   align-items: center;
 }
 
-/* Chips: acentos suaves (15%) */
 .chip {
   appearance: none;
   -webkit-appearance: none;
@@ -300,7 +280,6 @@ body {
   cursor: pointer;
 }
 
-/* ===== GRID + CARDS ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -356,7 +335,6 @@ body {
   font-size: var(--meta);
 }
 
-/* ===== PAGINACIÓN ===== */
 .pagination {
   display: flex;
   justify-content: center;
@@ -398,3 +376,130 @@ body {
   font-size: 14px;
 }
 
+/* ===== FOOTER ===== */
+
+.footer-dev {
+  background-color: #111111;
+  color: #f9fafb;
+  font-size: 0.95rem;
+  margin-top: 0;
+}
+
+.footer-logo-img {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-text {
+  color: #d1d5db;
+}
+
+.footer-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.footer-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e5e7eb;
+}
+
+.btn-footer-newsletter {
+  background-color: #6faf9a;
+  border-color: #6faf9a;
+  color: #111111;
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-footer-newsletter:hover,
+.btn-footer-newsletter:focus {
+  background-color: #63a48e;
+  border-color: #63a48e;
+  color: #0b0b0b;
+}
+
+.footer-links li + li {
+  margin-top: 0.35rem;
+}
+
+.footer-link {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #6faf9a;
+  text-decoration: underline;
+}
+
+.footer-social-link {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  border-color: #6faf9a;
+  color: #6faf9a;
+}
+
+.footer-divider {
+  border-color: #4b5563;
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  align-items: flex-start;
+}
+
+.footer-bottom-text {
+  color: #e5e7eb;
+}
+
+.footer-bottom-links {
+  text-align: left;
+}
+
+.footer-bottom-link {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-bottom-link:hover,
+.footer-bottom-link:focus {
+  color: #f9fafb;
+  text-decoration: underline;
+}
+
+.footer-disclaimer {
+  max-width: 680px;
+  color: #d1d5db;
+}
+
+@media (max-width: 767.98px) {
+  .footer-dev {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+  }
+}
