@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | DevMarket AI Blog – Programación, Marketing e IA</title>
+    <meta
+      name="description"
+      content="¿Tenés consultas sobre programación, marketing digital o IA? Escribinos a Blog DevMarket IA y recibí asistencia personalizada en menos de 24 horas."
+    />
+    <meta name="author" content="Equipo DevMarket AI" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
+            DevMarket IA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <!-- Botón Contacto -->
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <!-- Botón acerca de nosotros -->
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/acerca de nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <!-- Botón login -->
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/login.html">Login</a>
+              </li>
+              <!-- Botón Suscripción (abre modal) -->
+              <li class="nav-item d-flex align-items-center">
+                <button
+                  class="btn btn-suscripcion-rojo"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                >
+                  Suscripción
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal Suscripción -->
+      <div
+        class="modal fade"
+        id="suscripcionModal"
+        tabindex="-1"
+        aria-labelledby="suscripcionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suscripcionModalLabel">
+                Suscríbete a nuestro Blog
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label"
+                    >Nombre y Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark w-100">
+                  Suscribirme
+                </button>
+              </form>
+            </div>
+            <div class="text-center">
+              <p>O ingresa con:</p>
+              <div class="d-grid gap-2 mb-3 btn-social">
+                <button type="button" class="text-center btn btn-social w-100">
+                  Registrarte con Google
+                </button>
+                <button type="button" class="text-center btn btn-social w-100">
+                  Registrarte con Facebook
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+              <h1 class="fw-bold mt-5">Hablemos de tus <span>ideas.</span></h1>
+              <p class="text-secondary mt-3">
+                ¿Tenés una duda, una idea o un aporte sobre los temas que
+                compartimos en el Blog?
+              </p>
+              <p class="text-secondary mt-3">
+                Nos encanta leer a quienes forman parte de esta comunidad.
+                Sabemos que la programación, el marketing digital y la
+                inteligencia artificial generan preguntas, curiosidad y nuevos
+                desafíos todo el tiempo, y este espacio existe justamente para
+                acompañarte en ese recorrido.
+              </p>
+            </div>
+
+            <div class="col-md-6 mt-4">
+              <div class="p-4 shadow-sm rounded bg-white">
+                <h5 class="fw-bold mb-3">Envianos un mensaje</h5>
+
+                <form>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="nombreCompleto"
+                      >Nombre completo</label
+                    >
+                    <input
+                      type="text"
+                      id="nombreCompleto"
+                      class="form-control"
+                      placeholder="Ej: Ana García"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Correo electrónico*"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Teléfono*"
+                      inputmode="numeric"
+                      pattern="[0-9]{7,15}"
+                      title="Ingresá solo números (entre 7 y 15 dígitos)"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Empresa*"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Sitio Web*"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Asunto*"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <textarea
+                      rows="4"
+                      class="form-control"
+                      placeholder="Escribí tu mensaje...*"
+                      minlength="10"
+                      maxlength="500"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button class="btn btn-primary-main w-100">
+                    Enviar mensaje
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+              <div class="shadow-sm rounded overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3032710772057!2d-58.3997089235178!3d-34.5690599575654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bb6b4fe0d7%3A0x7b23de0f7aa9b72e!2sAv.%20del%20Libertador%201050%2C%20C1425AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1707500000000!5m2!1ses-419!2sar"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h4 class="fw-bold mb-3">Encontranos aquí</h4>
+
+              <p class="mb-2">
+                <strong>Dirección:</strong> Av. Libertador 1050, Buenos Aires
+              </p>
+              <p class="mb-2"><strong>Teléfono:</strong> +54 11 1234-5678</p>
+              <p class="mb-2"><strong>Email:</strong> info@devmarketai.com</p>
+              <p class="mb-2">
+                <strong>Sitio web:</strong> www.devmarketai.com
+              </p>
+
+              <p class="mt-3 text-secondary">
+                También podés escribirnos directamente por correo y respondemos
+                en menos de 24 horas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+     <footer class="footer-dev">
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="footer-brand d-flex align-items-start gap-3">
+              <img
+                src="../img/logo.png"
+                alt="Logo DevMarketIA"
+                class="footer-logo-img"
+              />
+              <div>
+                <h2 class="footer-logo mb-2">
+                  <span class="color-blog text-white px-2 py-1 rounded">Blog</span>
+                  DevMarketIA
+                </h2>
+                <p class="footer-text mb-3">
+                  Contenidos sobre programación, marketing e inteligencia artificial
+                  para equipos y personas que quieren entender y aprovechar la
+                  tecnología en su día a día.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-footer-newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                >
+                  Suscribite al newsletter
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="footer-title">Explorá contenidos</h3>
+            <ul class="footer-links list-unstyled mb-0">
+              <li><a href="#" class="footer-link">Programación y desarrollo</a></li>
+              <li><a href="#" class="footer-link">Marketing y contenido</a></li>
+              <li><a href="#" class="footer-link">IA aplicada y herramientas</a></li>
+              <li><a href="#" class="footer-link">Automatización y funnels</a></li>
+              <li><a href="#" class="footer-link">Datos, métricas y analítica</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3 class="footer-title">Ayuda y sitio</h3>
+            <ul class="footer-links list-unstyled mb-3">
+              <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
+              <li><a href="#" class="footer-link">Soporte / Ayuda</a></li>
+              <li><a href="#" class="footer-link">Guía para nuevos lectores</a></li>
+              <li>
+                <a href="../pages/acerca de nosotros.html" class="footer-link">
+                  Acerca de nosotros
+                </a>
+              </li>
+              <li>
+                <a href="../pages/contacto.html" class="footer-link">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+
+            <h4 class="footer-subtitle">Seguinos</h4>
+            <ul class="footer-social list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="footer-social-link">X</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-social-link">LinkedIn</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-social-link">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
+        <div
+          class="footer-bottom d-flex flex-column flex-lg-row justify-content-between gap-2"
+        >
+          <p class="mb-0 small footer-bottom-text">
+            © 2026 DevMarketIA. Todos los derechos reservados.
+          </p>
+
+          <div
+            class="footer-bottom-links d-flex flex-column flex-sm-row gap-2 gap-sm-3 small"
+          >
+            <a href="#" class="footer-bottom-link">Términos y condiciones</a>
+            <a href="#" class="footer-bottom-link">Política de privacidad</a>
+            <a href="#" class="footer-bottom-link">Política de cookies</a>
+          </div>
+        </div>
+
+        <p class="footer-disclaimer small mt-3 mb-0">
+          DevMarketIA publica contenido informativo. No sustituye asesoramiento
+          profesional legal, financiero ni médico.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
