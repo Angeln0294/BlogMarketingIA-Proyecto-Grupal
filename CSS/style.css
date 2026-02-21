@@ -1,205 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
-    --color-border-soft: #dee2e6;
-    /* gris suave del borde */
-    --color-accent: #6faf9a;
-    /* verde del proyecto */
-}
-
-body {
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.color-blog {
-    background-color: #6FAF9A;
-}
-
-.btn-suscripcion-rojo {
-    /* Color de fuente y borde más suave para integrar con el gris del menú */
-    color: #d9534f !important;
-    border: 1px solid #eecaca !important;
-    /* Borde más fino (1px) */
-
-    background-color: transparent;
-    border-radius: 50px;
-
-    /* Ajuste de tamaño para nivelar con los otros textos */
-    padding: 4px 18px !important;
-    font-size: 0.95rem;
-    /* Ajusta este valor si tus otros links son más chicos */
-    font-weight: 500;
-
-    /* Alineación vertical */
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-.btn-suscripcion-rojo:hover {
-    background-color: #fdf2f2;
-    border-color: #d9534f !important;
-}
-
-/* Botones "sociales" (Google / Facebook) */
-.btn-social {
-    background-color: #ffffff;
-    border: 1px solid var(--color-border-soft);
-    border-radius: 999px;
-    padding: 0.6rem 1.3rem;
-    text-align: left;
-    font-weight: 500;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-}
-
-.btn-social:hover,
-.btn-social:focus {
-    border-color: var(--color-accent);
-    color: #111111;
-}
-
-/* Estilo para el contenedor del carrusel */
-.carousel-caption-custom {
-    border: 1px solid rgba(110, 175, 154, 0.3); /* Un borde muy sutil del mismo verde */
-    padding: 2rem !important;
-}
-
-/* Estilo para el contenedor del carrusel */
-.carousel-caption-custom {
-    border: 1px solid rgba(110, 175, 154, 0.3); /* Un borde muy sutil del mismo verde */
-    padding: 2rem !important;
-}
-
-/* Estilo para el H1 con tu color específico */
-.h1-verde {
-    color: #6FAF9A !important;
-    font-size: 42px !important; /* Dentro del rango 36-48px */
-    font-weight: 700 !important;
-    text-shadow: 2px 2px 4px #00000080; /* Sombra para mayor legibilidad */
-    letter-spacing: -1px;
-}
-
-/* Estilo para el párrafo */
-.p-verde {
-    color: #cbdad5 !important; /* Un verde muy clarito, casi gris, para que armonice */
-    font-size: 1.2rem;
-    font-weight: 400;
-}
-
-/* Decoración extra: línea divisoria */
-.h1-verde::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: #6FAF9A;
-    margin: 15px auto 0;
-    border-radius: 2px;
-}
-
-/* Ajuste en móviles: centrar texto */
-@media (max-width: 767.98px) {
-    .btn-social {
-        text-align: center;
-    }
-}
-
-/* Evita que el carrusel se desborde */
-#carousel-DivMarketIA {
-    overflow: hidden;
-    max-width: 100%;
-}
-
-/* Ajusta las imágenes */
-.carousel-img {
-    width: 100%;
-    /* nunca más ancho que el contenedor */
-    max-width: 100%;
-    /* asegura que no se desborde */
-    height: 500px;
-    /* altura fija en desktop */
-    object-fit: cover;
-    /* recorta manteniendo proporción */
-    display: block;
-    /* elimina espacios fantasmas */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1);
-}
-
-/* ajuste de imagenes del carousel para dispositivos grandes */
-@media (max-width: 992px) {
-    .carousel-img {
-        height: 250px;
-    }
-}
-
-/* En móviles, reduce la altura */
-@media (max-width: 768px) {
-    .carousel-img {
-        height: 300px;
-    }
-}
-
-/* Elimina scroll horizontal global */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
+  --color-border-soft: #dee2e6;
+  --color-accent: #6faf9a;
 }
 
 html,
 body {
-    width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-/*color de seccion de paginacion*/
-/* Color general de los números */
+.color-blog {
+  background-color: #6FAF9A;
+}
+
+.btn-suscripcion-rojo {
+  color: #d9534f !important;
+  border: 1px solid #eecaca !important;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 4px 18px !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.btn-suscripcion-rojo:hover {
+  background-color: #fdf2f2;
+  border-color: #d9534f !important;
+}
+
+.btn-social {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  text-align: left;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.btn-social:hover,
+.btn-social:focus {
+  border-color: var(--color-accent);
+  color: #111111;
+}
+
+.carousel-caption-custom {
+  border: 1px solid rgba(110, 175, 154, 0.3);
+  padding: 2rem !important;
+}
+
+.h1-verde {
+  color: #6FAF9A !important;
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 4px #00000080;
+  letter-spacing: -1px;
+}
+
+.h1-verde::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #6FAF9A;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.p-verde {
+  color: #cbdad5 !important;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#carousel-DivMarketIA {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-img {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
 .pagination .page-link {
-    color: #6FAF9A;
-    /* Verde suave */
+  color: #6FAF9A;
 }
 
-/* Número activo */
 .pagination .page-item.active .page-link {
-    background-color: #6FAF9A;
-    /* Fondo verde */
-    border-color: #6FAF9A;
-    color: #fff;
-    /* Texto blanco para contraste */
+  background-color: #6FAF9A;
+  border-color: #6FAF9A;
+  color: #fff;
 }
 
-/* Hover sobre los números */
 .pagination .page-link:hover {
-    color: #4e8c77;
-    /* Verde más oscuro al pasar el mouse */
+  color: #4e8c77;
 }
 
-/* Opcional: deshabilitado más tenue */
 .pagination .page-item.disabled .page-link {
-    color: #ccc;
+  color: #ccc;
 }
 
 .list-group-item a {
   display: block;
-  color: #6FAF9A;       /* verde del proyecto */
+  color: #6FAF9A;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s, transform 0.2s;
 }
 
 .list-group-item a:hover {
-  color: #0d6efd;       /* azul Bootstrap */
-  transform: translateX(5px); /* pequeño movimiento al pasar el mouse */
+  color: #0d6efd;
+  transform: translateX(5px);
 }
 
 .footer-dev {
-  background-color: #111111;  
+  background-color: #111111;
   color: #f9fafb;
   font-size: 0.95rem;
-  margin-top: 0;  
+  margin-top: 0;
 }
 
 .footer-logo-img {
@@ -214,7 +152,7 @@ body {
 }
 
 .footer-text {
-  color: #d1d5db;          
+  color: #d1d5db;
 }
 
 .footer-title {
@@ -231,7 +169,7 @@ body {
 }
 
 .btn-footer-newsletter {
-  background-color: #6faf9a; 
+  background-color: #6faf9a;
   border-color: #6faf9a;
   color: #111111;
   border-radius: 999px;
@@ -288,7 +226,7 @@ body {
 }
 
 .footer-bottom-text {
-  color: #e5e7eb;  
+  color: #e5e7eb;
 }
 
 .footer-bottom-links {
@@ -311,7 +249,27 @@ body {
   color: #d1d5db;
 }
 
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+@media (max-width: 992px) {
+  .carousel-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
+
 @media (max-width: 767.98px) {
+  .btn-social {
+    text-align: center;
+  }
+
   .footer-dev {
     text-align: left;
   }
