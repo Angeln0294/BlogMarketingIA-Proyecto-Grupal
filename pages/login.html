@@ -91,59 +91,79 @@
       </nav>
     </header>
 
-    <div
-      class="modal fade"
-      id="suscripcionModal"
-      tabindex="-1"
-      aria-labelledby="suscripcionModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="suscripcionModalLabel">
-              Suscribite a nuestro blog
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="nombreSuscripcion" class="form-label">
-                  Nombre y Apellido
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombreSuscripcion"
-                  required
-                />
+ <div
+        class="modal fade"
+        id="suscripcionModal"
+        tabindex="-1"
+        aria-labelledby="suscripcionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suscripcionModalLabel">
+                Suscríbete a nuestro Blog
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="subNombre" class="form-label"
+                    >Nombre y Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subNombre"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subEmail" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="subEmail"
+                    required
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">
+                  Suscribirme
+                </button>
+              </form>
+
+              <div class="text-center mt-3">
+                <p class="mb-2">O ingresa con:</p>
+                <div class="d-grid gap-2 mb-3">
+                  <button
+                    type="button"
+                    class="text-center btn btn-social w-100"
+                  >
+                    Registrarte con Google
+                  </button>
+                  <button
+                    type="button"
+                    class="text-center btn btn-social w-100"
+                  >
+                    Registrarte con Facebook
+                  </button>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="emailSuscripcion" class="form-label">
-                  Correo electrónico
-                </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailSuscripcion"
-                  required
-                />
-              </div>
-              <button type="submit" class="btn btn-primary-main w-100">
-                Suscribirme
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
     <main class="bg-page login-main py-5">
       <div class="container">
         <div class="row justify-content-center align-items-center">
