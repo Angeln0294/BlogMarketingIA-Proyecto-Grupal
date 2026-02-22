@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <title>Galería de Imágenes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/galeria.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
+            DevMarket IA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/acerca de nosotros.html"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/login.html">Login</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <button
+                  class="btn btn-suscripcion-rojo"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                >
+                  Suscripción
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="suscripcionModal"
+        tabindex="-1"
+        aria-labelledby="suscripcionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suscripcionModalLabel">
+                Suscribite a nuestro Blog
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre y Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark w-100">
+                  Suscribirme
+                </button>
+              </form>
+            </div>
+            <div class="text-center">
+              <p>O ingresá con:</p>
+              <div class="d-grid gap-2 mb-3 btn-social">
+                <button type="button" class="text-center btn btn-social w-100">
+                  Registrarte con Google
+                </button>
+                <button type="button" class="text-center btn btn-social w-100">
+                  Registrarte con Facebook
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+    <div class="hero">
+      <div class="container">
+        <h1 class="h1">Galería de Imágenes</h1>
+        <p class="body sub">
+          Explora nuestras fotos y recursos visuales sobre tecnología, marketing
+          y desarrollo.
+        </p>
+
+        <nav class="breadcrumb" aria-label="breadcrumb">
+          <a class="link" href="#">Inicio</a>
+          <span class="sep">›</span>
+          <span class="meta">Galería de imágenes</span>
+        </nav>
+      </div>
+    </div>
+    <section class="toolbar">
+      <div class="container toolbar-inner">
+        <div class="filters" aria-label="Filtros">
+          <button class="chip chip--active" type="button">Todos</button>
+          <button class="chip" type="button">Desarrollo</button>
+          <button class="chip" type="button">IA</button>
+          <button class="chip" type="button">Marketing</button>
+          <button class="chip" type="button">SEO</button>
+          <button class="chip" type="button">Data Science</button>
+        </div>
+        <div class="order">
+          <span class="meta">Ordenar por:</span>
+          <select class="select" aria-label="Ordenar por">
+            <option>Más Recientes</option>
+            <option>Más Antiguos</option>
+            <option>A–Z</option>
+            <option>Z–A</option>
+          </select>
+          <button class="page" type="button" aria-label="Página actual">
+            12
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="grid" aria-label="Galería">
+        <article class="card">
+          <img
+            class="thumb"
+            
+            src="../img/galeria/escribiendo-codigo.avif"
+            alt="Escribiendo código"
+          />
+          <div class="card-body">
+            <h3 class="h3">Escribiendo código</h3>
+            <p class="body">Programando una nueva funcionalidad.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+                         src="../img/galeria/inteligencia-artificial.avif"
+            alt="Inteligencia Artificial"
+          />
+          <div class="card-body">
+            <h3 class="h3">Inteligencia Artificial</h3>
+            <p class="body">Innovación y futuro de la IA.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+                         src="../img/galeria/estrategia-digital.avif"
+            alt="Estrategia Digital"
+          />
+          <div class="card-body">
+            <h3 class="h3">Estrategia Digital</h3>
+            <p class="body">Planeando una campaña de marketing.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+                        src="../img/galeria/trabajo-en-equipo.avif"
+            alt="Trabajo en Equipo"
+          />
+          <div class="card-body">
+            <h3 class="h3">Trabajo en Equipo</h3>
+            <p class="body">Colaborando en el proyecto.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/redes-neuronales.avif"            alt="Redes Neuronales"
+          />
+          <div class="card-body">
+            <h3 class="h3">Redes Neuronales</h3>
+            <p class="body">Avances en redes neuronales.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/espacio-de-trabajo.avif"
+            alt="Espacio de Trabajo"
+          />
+          <div class="card-body">
+            <h3 class="h3">Espacio de Trabajo</h3>
+            <p class="body">Un escritorio listo para crear.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/desarrollo-web.avif"
+            alt="Desarrollo Web"
+          />
+          <div class="card-body">
+            <h3 class="h3">Desarrollo Web</h3>
+            <p class="body">Creando con WordPress.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/inspiracion-montana.avif"
+            alt="Inspiración"
+          />
+          <div class="card-body">
+            <h3 class="h3">Inspiración</h3>
+            <p class="body">Vista inspiradora en la montaña.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/analisis-de-datos.avif"
+            alt="Análisis de Datos"
+          />
+          <div class="card-body">
+            <h3 class="h3">Análisis de Datos</h3>
+            <p class="body">Visualizando estadísticas y métricas.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/reunion-de-proyecto.avif"
+            alt="Reunión de Proyecto"
+          />
+          <div class="card-body">
+            <h3 class="h3">Reunión de Proyecto</h3>
+            <p class="body">Planificación y seguimiento del equipo.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/gestion-de-contenidos.avif"
+            alt="Gestión de Contenidos"
+          />
+          <div class="card-body">
+            <h3 class="h3">Gestión de Contenidos</h3>
+            <p class="body">Organizando publicaciones y recursos.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            class="thumb"
+            src="../img/galeria/seo-tecnico.avif"
+            alt="SEO Técnico"
+          />
+          <div class="card-body">
+            <h3 class="h3">SEO Técnico</h3>
+            <p class="body">Optimización para buscadores.</p>
+          </div>
+        </article>
+      </section>
+      <nav class="pagination" aria-label="Paginación">
+        <button class="page-btn page-btn--active" type="button">1</button>
+        <button class="page-btn" type="button">2</button>
+        <button class="page-btn" type="button">3</button>
+        <button class="page-btn" type="button">4</button>
+        <span class="page-dots">…</span>
+        <button class="page-btn page-btn--next" type="button">Siguiente</button>
+      </nav>
+    </main>
+     <footer class="footer-dev">
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="footer-brand d-flex align-items-start gap-3">
+              <img
+                src="../img/galeria/logo.png"
+                alt="Logo DevMarketIA"
+                class="footer-logo-img"
+              />
+              <div>
+                <h2 class="footer-logo mb-2">
+                  <span class="color-blog text-white px-2 py-1 rounded">Blog</span>
+                  DevMarketIA
+                </h2>
+                <p class="footer-text mb-3">
+                  Contenidos sobre programación, marketing e inteligencia artificial
+                  para equipos y personas que quieren entender y aprovechar la
+                  tecnología en su día a día.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-footer-newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                >
+                  Suscribite al newsletter
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="footer-title">Explorá contenidos</h3>
+            <ul class="footer-links list-unstyled mb-0">
+              <li><a href="#" class="footer-link">Programación y desarrollo</a></li>
+              <li><a href="#" class="footer-link">Marketing y contenido</a></li>
+              <li><a href="#" class="footer-link">IA aplicada y herramientas</a></li>
+              <li><a href="#" class="footer-link">Automatización y funnels</a></li>
+              <li><a href="#" class="footer-link">Datos, métricas y analítica</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3 class="footer-title">Ayuda y sitio</h3>
+            <ul class="footer-links list-unstyled mb-3">
+              <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
+              <li><a href="#" class="footer-link">Soporte / Ayuda</a></li>
+              <li><a href="#" class="footer-link">Guía para nuevos lectores</a></li>
+              <li>
+                <a href="../pages/acerca de nosotros.html" class="footer-link">
+                  Acerca de nosotros
+                </a>
+              </li>
+              <li>
+                <a href="../pages/contacto.html" class="footer-link">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+
+            <h4 class="footer-subtitle">Seguinos</h4>
+            <ul class="footer-social list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="footer-social-link">X</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-social-link">LinkedIn</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-social-link">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
+        <div
+          class="footer-bottom d-flex flex-column flex-lg-row justify-content-between gap-2"
+        >
+          <p class="mb-0 small footer-bottom-text">
+            © 2026 DevMarketIA. Todos los derechos reservados.
+          </p>
+
+          <div
+            class="footer-bottom-links d-flex flex-column flex-sm-row gap-2 gap-sm-3 small"
+          >
+            <a href="#" class="footer-bottom-link">Términos y condiciones</a>
+            <a href="#" class="footer-bottom-link">Política de privacidad</a>
+            <a href="#" class="footer-bottom-link">Política de cookies</a>
+          </div>
+        </div>
+
+        <p class="footer-disclaimer small mt-3 mb-0">
+          DevMarketIA publica contenido informativo. No sustituye asesoramiento
+          profesional legal, financiero ni médico.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
