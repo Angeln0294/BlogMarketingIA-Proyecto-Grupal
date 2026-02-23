@@ -1,43 +1,30 @@
-/* Fuente general del proyecto */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 
-body {
-  font-family: "Nunito Sans", sans-serif;
-}
-
-/*------------------------------------------------
-  VARIABLES BÁSICAS (opcional, pero útil)
-------------------------------------------------*/
 :root {
   --color-accent: #6faf9a;
   --color-border-soft: #dee2e6;
 }
 
-/*------------------------------------------------
-  NAVBAR
-------------------------------------------------*/
-.navbar{
-    background-color: white;
+body {
+  font-family: "Nunito Sans", sans-serif;
 }
+
+.navbar {
+  background-color: #ffffff;
+}
+
 .color-blog {
   background-color: var(--color-accent);
 }
 
-/* Botón de Suscripción en el navbar */
 .btn-suscripcion-rojo {
-  /* Color de fuente y borde más suave para integrar con el gris del menú */
   color: #d9534f !important;
-  border: 1px solid #eecaca !important; /* Borde más fino (1px) */
-
+  border: 1px solid #eecaca !important;
   background-color: transparent;
   border-radius: 50px;
-
-  /* Ajuste de tamaño para nivelar con los otros textos */
   padding: 4px 18px !important;
   font-size: 0.95rem;
   font-weight: 500;
-
-  /* Alineación vertical */
   display: inline-flex;
   align-items: center;
   transition: all 0.3s ease;
@@ -48,16 +35,24 @@ body {
   border-color: #d9534f !important;
 }
 
-/* Si en el modal de suscripción usás botones sociales,
-   dejá esto. Si no, lo podés borrar sin problema. */
 .btn-social {
   background-color: #ffffff;
   border: 1px solid var(--color-border-soft);
   border-radius: 999px;
   padding: 0.6rem 1.3rem;
-  text-align: left;
   font-weight: 500;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.btn-social .social-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-social:hover,
@@ -66,15 +61,10 @@ body {
   color: #111111;
 }
 
-@media (max-width: 767.98px) {
-  .btn-social {
-    text-align: center;
-  }
+.btn-redes {
+  text-decoration: none;
+  color: #111111;
 }
-
-/*------------------------------------------------
-  ESTILOS ESPECÍFICOS DE CONTACTO
-------------------------------------------------*/
 
 h1 span {
   color: var(--color-accent);
@@ -106,11 +96,15 @@ h1 span {
   transform: translateY(0);
 }
 
+#link-web{
+  text-decoration: none;
+}
+
 .footer-dev {
-  background-color: #111111;  
+  background-color: #111111;
   color: #f9fafb;
   font-size: 0.95rem;
-  margin-top: 0;  
+  margin-top: 0;
 }
 
 .footer-logo-img {
@@ -125,7 +119,7 @@ h1 span {
 }
 
 .footer-text {
-  color: #d1d5db;          
+  color: #d1d5db;
 }
 
 .footer-title {
@@ -142,8 +136,8 @@ h1 span {
 }
 
 .btn-footer-newsletter {
-  background-color: #6faf9a; 
-  border-color: #6faf9a;
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
   color: #111111;
   border-radius: 999px;
   padding: 0.45rem 1.1rem;
@@ -169,7 +163,7 @@ h1 span {
 
 .footer-link:hover,
 .footer-link:focus {
-  color: #6faf9a;
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
@@ -185,8 +179,8 @@ h1 span {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  border-color: #6faf9a;
-  color: #6faf9a;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .footer-divider {
@@ -199,7 +193,7 @@ h1 span {
 }
 
 .footer-bottom-text {
-  color: #e5e7eb;  
+  color: #e5e7eb;
 }
 
 .footer-bottom-links {
@@ -223,6 +217,10 @@ h1 span {
 }
 
 @media (max-width: 767.98px) {
+  .btn-social {
+    text-align: center;
+  }
+
   .footer-dev {
     text-align: left;
   }
