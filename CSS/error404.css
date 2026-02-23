@@ -1,11 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 
+:root {
+  --color-primary: #111111;
+  --color-accent: #6faf9a;
+  --color-border-soft: #dee2e6;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+.navbar {
+  background-color: #ffffff;
+}
+
 .color-blog {
-  background-color: #6faf9a;
+  background-color: var(--color-accent);
+}
+
+.main-offset {
+  padding-top: 6.5rem;
 }
 
 .btn-suscripcion-rojo {
@@ -44,7 +58,7 @@ body {
 }
 
 .btn-secondary-solid {
-  background-color: #6faf9a;
+  background-color: var(--color-accent);
   color: #ffffff;
   padding: 10px 22px;
   border-radius: 50px;
@@ -53,11 +67,37 @@ body {
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.2s ease;
+  text-align: center;
 }
 
 .btn-secondary-solid:hover {
   background-color: #5b9482;
   color: #ffffff;
+}
+
+.btn-social {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #111111;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+  border-color: var(--color-accent);
+  color: #111111;
+}
+
+.search-group {
+  max-width: 380px;
 }
 
 .footer-dev {
@@ -96,8 +136,8 @@ body {
 }
 
 .btn-footer-newsletter {
-  background-color: #6faf9a;
-  border-color: #6faf9a;
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
   color: #111111;
   border-radius: 999px;
   padding: 0.45rem 1.1rem;
@@ -123,7 +163,7 @@ body {
 
 .footer-link:hover,
 .footer-link:focus {
-  color: #6faf9a;
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
@@ -139,8 +179,8 @@ body {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  border-color: #6faf9a;
-  color: #6faf9a;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .footer-divider {
