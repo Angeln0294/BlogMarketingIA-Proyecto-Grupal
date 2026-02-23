@@ -12,18 +12,603 @@
       content="Guadalupe Pereyra, Esteban Vellido, Judith Bertolini, Angel Nader"
     />
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>DevMarket AI</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top py-3 navbar-light bg-white shadow-sm"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
+            DevMarket IA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/nosotros.html">
+                  Nosotros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/login.html">Login</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <button
+                  class="btn btn-suscripcion-rojo"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                >
+                  Suscripción
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="modal fade"
+        id="suscripcionModal"
+        tabindex="-1"
+        aria-labelledby="suscripcionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suscripcionModalLabel">
+                Suscribite a nuestro Blog
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">
+                    Nombre y Apellido
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">
+                    Correo Electrónico
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark w-100">
+                  Suscribirme
+                </button>
+              </form>
+            </div>
+            <div class="text-center">
+              <p>O suscribite con:</p>
+              <div class="d-grid gap-2 mb-3">
+
+              <button type="button" class="btn btn-social w-100">
+                  <span class="social-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-google"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                      />
+                    </svg>
+                  </span>
+                  <a class="btn-redes" href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" target="_blank"><span>Suscribirse con Google</span></a>
+                </button>
+
+                <button type="button" class="btn btn-social w-100">
+                  <span class="social-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                      />
+                    </svg>
+                  </span>
+                  <a class="btn-redes" href="https://www.facebook.com/" target="_blank">Suscribirse con Facebook</a>
+                </button>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="carousel-DivMarketIA" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-DivMarketIA"
+            data-bs-slide-to="0"
+            class="active bg-black"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-DivMarketIA"
+            class="bg-black"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-DivMarketIA"
+            class="bg-black"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/banner/entorno-digital-moderno.jpg"
+              class="carousel-img"
+              alt="Entorno digital moderno con pantallas y diseño tecnológico"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded carousel-caption-custom shadow-lg"
+            >
+              <h1 class="display-4 fw-bold h1-verde">
+                Estrategias en Programación, <br />
+                Marketing e IA
+              </h1>
+              <p class="p-verde">
+                Domina la tecnología que está cambiando el mundo digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="/img/banner/equipo-trabajo-oficina.jpg"
+              class="carousel-img"
+              alt="Equipo de trabajo colaborando con laptops en oficina moderna"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark text-bg-secondary bg-opacity-75 rounded"
+            >
+              <h5>Construyendo el futuro con tecnología</h5>
+              <p>La innovación comienza con la colaboración.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="img/banner/profesionales-trabajando.jpg"
+              class="carousel-img"
+              alt="Profesionales trabajando en equipo en un entorno creativo"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark text-bg-secondary bg-opacity-75 rounded"
+            >
+              <h5>Innovación y trabajo en equipo</h5>
+              <p>Transforma tus ideas en proyectos reales.</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-DivMarketIA"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-DivMarketIA"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>Últimos Artículos</h2>
+
+            <article>
+              <div class="card shadow mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="img/reunion-estrategica.jpg"
+                      class="img-fluid rounded-start h-100"
+                      style="object-fit: cover"
+                      alt="Reunión estratégica de marketing digital revisando reportes de rendimiento y estadísticas de ventas en tiempo real."
+                    />
+                  </div>
+
+                  <div
+                    class="col-md-8 d-flex flex-column justify-content-between"
+                  >
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Explorando nuestra Galería Visual
+                      </h5>
+                      <p class="card-text">
+                        Un recorrido detallado por nuestros proyectos más
+                        recientes. Descubre cómo transformamos conceptos
+                        abstractos en interfaces funcionales y estéticas a
+                        través de nuestra curaduría visual.
+                      </p>
+                      <a href="/pages/galeria.html" class="btn btn-dark">
+                        Ver más
+                      </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                      Por Juan Pérez · hace 3 días · Programación
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="card shadow mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="img/cooperacion-empresarial.jpg"
+                      class="img-fluid rounded-start h-100"
+                      alt="Concepto de colaboración empresarial y unidad corporativa en una oficina de diseño moderno"
+                    />
+                  </div>
+
+                  <div
+                    class="col-md-8 d-flex flex-column justify-content-between"
+                  >
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        El Arte de Escribir Código y Experiencias
+                      </h5>
+                      <p class="card-text">
+                        Nuestra sección de blog es el corazón de la comunidad.
+                        Aquí compartimos tutoriales, consejos técnicos sobre
+                        Bootstrap y reflexiones sobre el futuro del desarrollo
+                        frontend.
+                      </p>
+                      <a href="/pages/entradadeblog.html" class="btn btn-dark">
+                        Ver más
+                      </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                      Por Juan Pérez · hace 3 días · Programación
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card shadow mb-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="img/desarrollo-software.jpg"
+                      class="img-fluid rounded-start h-100"
+                      alt="Desarrolladores de software y diseñadores colaborando en el lanzamiento de un nuevo sitio web en un entorno creativo"
+                    />
+                  </div>
+
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Conoce la estrategia detrás de DevMarket IA
+                      </h5>
+                      <p class="card-text">
+                        ¿Quiénes somos y hacia dónde vamos? Te invitamos a
+                        conocer nuestra misión, los valores que impulsan nuestro
+                        desarrollo y el equipo humano que hace posible este
+                        proyecto educativo.
+                      </p>
+                      <a href="pages/nosotros.html" class="btn btn-dark">
+                        Ver más
+                      </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                      Por María López · hace 5 días · Inteligencia Artificial
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">4</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">5</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <h4>Buscar</h4>
+            <div class="card shadow mb-4">
+              <div class="card-body">
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Buscar artículos..."
+                      aria-label="Buscar"
+                      required
+                    />
+                    <button class="btn btn-dark" type="submit">Buscar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <h4>Categorías</h4>
+            <ul class="list-group mb-4 shadow">
+              <li class="list-group-item bg-white rounded shadow-sm">
+                Programación (8)
+              </li>
+              <li class="list-group-item">Inteligencia Artificial (5)</li>
+              <li class="list-group-item">Marketing (7)</li>
+              <li class="list-group-item">Desarrollo Web (4)</li>
+              <li class="list-group-item">SEO (6)</li>
+            </ul>
+
+            <h4 class="d-none d-md-block">Publicidad</h4>
+            <div class="border p-3 mb-4 text-center shadow d-none d-md-block">
+              <a href="pages/error404.html">
+                <img
+                  src="./img/Publicidad/publicidadGIGA.jpg"
+                  class="img-fluid rounded"
+                  alt="GIGABYTE Gaming GT Series Desktop PC con diseño futurista e iluminación verde"
+                />
+              </a>
+            </div>
+
+            <h4>Enlaces Útiles</h4>
+            <ul class="list-group shadow">
+              <li class="list-group-item">
+                <a
+                  href="pages/registro.html"
+                  class="text-decoration-none fw-bold"
+                >
+                  Registro
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="pages/contacto.html" class="text-decoration-none fw-bold"> Contacto </a>
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="pages/galeria.html"
+                  class="text-decoration-none fw-bold"
+                >
+                  Galería
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="pages/error404.html"
+                  class="text-decoration-none fw-bold"
+                >
+                  Términos y Condiciones
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-dev">
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="footer-brand d-flex align-items-start gap-3">
+              <img
+                src="img/logo.png"
+                alt="Logo DevMarketIA"
+                class="footer-logo-img"
+              />
+              <div>
+                <h2 class="footer-logo mb-2">
+                  <span class="color-blog text-white px-2 py-1 rounded">
+                    Blog
+                  </span>
+                  DevMarketIA
+                </h2>
+                <p class="footer-text mb-3">
+                  Contenidos sobre programación, marketing e inteligencia
+                  artificial para equipos y personas que quieren entender y
+                  aprovechar la tecnología en su día a día.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-footer-newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcionModal"
+                >
+                  Suscribite al newsletter
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="footer-title">Explorá contenidos</h3>
+            <ul class="footer-links list-unstyled mb-0">
+              <li>
+                <a href="#" class="footer-link">Programación y desarrollo</a>
+              </li>
+              <li><a href="#" class="footer-link">Marketing y contenido</a></li>
+              <li>
+                <a href="#" class="footer-link">IA aplicada y herramientas</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Automatización y funnels</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Datos, métricas y analítica</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3 class="footer-title">Ayuda y sitio</h3>
+            <ul class="footer-links list-unstyled mb-3">
+              <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
+              <li><a href="#" class="footer-link">Soporte / Ayuda</a></li>
+              <li>
+                <a href="#" class="footer-link">Guía para nuevos lectores</a>
+              </li>
+              <li>
+                <a href="../pages/nosotros.html" class="footer-link">
+                  Nosotros
+                </a>
+              </li>
+              <li>
+                <a href="../pages/contacto.html" class="footer-link">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+
+            <h4 class="footer-subtitle">Seguinos</h4>
+            <ul class="footer-social list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="https://x.com/MoureDev" class="footer-social-link">X</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://es.linkedin.com/company/mouredev" class="footer-social-link">LinkedIn</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/@mouredev" class="footer-social-link">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
+        <div
+          class="footer-bottom d-flex flex-column flex-lg-row justify-content-between gap-2"
+        >
+          <p class="mb-0 small footer-bottom-text">
+            © 2026 DevMarketIA. Todos los derechos reservados.
+          </p>
+
+          <div
+            class="footer-bottom-links d-flex flex-column flex-sm-row gap-2 gap-sm-3 small"
+          >
+            <a href="#" class="footer-bottom-link">Términos y condiciones</a>
+            <a href="#" class="footer-bottom-link">Política de privacidad</a>
+            <a href="#" class="footer-bottom-link">Política de cookies</a>
+          </div>
+        </div>
+
+        <p class="footer-disclaimer small mt-3 mb-0">
+          DevMarketIA publica contenido informativo. No sustituye asesoramiento
+          profesional legal, financiero ni médico.
+        </p>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

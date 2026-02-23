@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Error 404 – Página no encontrada | DevMarketIA</title>
     <meta
       name="description"
-      content="La página que buscás no existe en DevMarketIA. Volvé al inicio o explorá categorías y recursos para seguir navegando."
+      content="Conocé al equipo detrás de DevMarket IA: programación, marketing e inteligencia artificial."
     />
-    <meta name="author" content="Equipo DevMarketIA" />
-
+    <meta name="author" content="DevMarket IA" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,23 +25,30 @@
       sizes="16x16"
       href="../favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
-
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../CSS/error404.css" />
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/nosotros.css" />
+
+    <title>DevMarket IA — Nosotros</title>
   </head>
 
-  <body class="bg-light">
+  <body>
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm">
+      <nav class="navbar navbar-expand-lg fixed-top py-3 shadow-sm bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html"
-            ><span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
-            DevMarket IA</a
-          >
+          <a class="navbar-brand" href="../index.html">
+            <span class="color-blog text-white py-1 p-lg-1 rounded">Blog</span>
+            DevMarket IA
+          </a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -61,18 +66,23 @@
               <li class="nav-item">
                 <a class="nav-link" href="../pages/contacto.html">Contacto</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+
+             <li class="nav-item">
+                <a class="nav-link" href="/pages/nosotros.html">
+                  Nosotros
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="../pages/login.html">Login</a>
+                <a class="nav-link" href="./login.html">Login</a>
               </li>
+
               <li class="nav-item d-flex align-items-center">
                 <button
                   class="btn btn-suscripcion-rojo"
-                  type="button"
                   data-bs-toggle="modal"
                   data-bs-target="#suscripcionModal"
+                  type="button"
                 >
                   Suscripción
                 </button>
@@ -93,7 +103,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="suscripcionModalLabel">
-                Suscribite a nuestro Blog
+                Suscríbete a nuestro Blog
               </h5>
               <button
                 type="button"
@@ -106,9 +116,9 @@
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="subNombre" class="form-label">
-                    Nombre y Apellido
-                  </label>
+                  <label for="subNombre" class="form-label"
+                    >Nombre y Apellido</label
+                  >
                   <input
                     type="text"
                     class="form-control"
@@ -118,9 +128,9 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="subEmail" class="form-label">
-                    Correo Electrónico
-                  </label>
+                  <label for="subEmail" class="form-label"
+                    >Correo Electrónico</label
+                  >
                   <input
                     type="email"
                     class="form-control"
@@ -135,24 +145,20 @@
               </form>
 
               <div class="text-center mt-3">
-                <p class="mb-2">O suscribite con:</p>
-                <div class="d-grid gap-2 mb-0">
-                  <a
-                    class="btn btn-social w-100"
-                    href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <p class="mb-2">O ingresa con:</p>
+                <div class="d-grid gap-2 mb-3">
+                  <button
+                    type="button"
+                    class="text-center btn btn-social w-100"
                   >
-                    Suscribirse con Google
-                  </a>
-                  <a
-                    class="btn btn-social w-100"
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    Registrarte con Google
+                  </button>
+                  <button
+                    type="button"
+                    class="text-center btn btn-social w-100"
                   >
-                    Suscribirse con Facebook
-                  </a>
+                    Registrarte con Facebook
+                  </button>
                 </div>
               </div>
             </div>
@@ -161,86 +167,85 @@
       </div>
     </header>
 
-    <main class="container py-5 main-offset">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4">
-          <h1 class="fw-bold display-4">404</h1>
-          <h2 class="fw-semibold mt-3 h4">Ups… esta página no existe.</h2>
+    <main class="nb-offset">
+      <section class="about-hero">
+        <div class="container about-hero__inner">
+          <h1 class="about-title">Nosotros</h1>
 
-          <p class="text-secondary mt-3">
-            Lo sentimos, parece que este contenido ya no está disponible o nunca
-            existió. Podés volver al inicio o explorar otras secciones.
+          <p class="about-lead">
+            Somos un equipo apasionado por la tecnología y el desarrollo. Cada
+            día combinamos nuestras habilidades para crear contenido claro,
+            práctico y útil, con ideas que inspiran y ayudan a otros a crecer en
+            el mundo digital.
           </p>
 
-          <div class="mt-4 d-flex gap-3 flex-wrap">
-            <a href="../index.html" class="btn-primary-solid">Ir al Inicio</a>
-            <a href="../index.html#categorias" class="btn-secondary-solid"
-              >Ver Categorías</a
-            >
+          <blockquote class="about-quote">
+            “Juntos construimos, aprendemos y crecemos cada día.”
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="about-body">
+        <div class="container">
+          <h2 class="section-title">Conocé a Nuestro Equipo</h2>
+
+          <p class="section-text">
+            Nos enorgullece ser un equipo diverso con experiencia en
+            programación, marketing e inteligencia artificial. Creemos en la
+            comunicación clara, la colaboración y la mejora continua. Nuestro
+            objetivo es fomentar una comunidad de aprendizaje, donde cada
+            miembro aporte su mirada y su experiencia para alcanzar metas en
+            conjunto.
+          </p>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Foto de Judith Bertolini"
+              />
+              <h3 class="team-name">Judith Bertolini</h3>
+              <p class="team-role">Ingeniera en Software</p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Foto de Esteban Fabricio Vellido"
+              />
+              <h3 class="team-name">Esteban Fabricio Vellido</h3>
+              <p class="team-role">Especialista en IA</p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/men/59.jpg"
+                alt="Foto de Angel Nader"
+              />
+              <h3 class="team-name">Angel Nader</h3>
+              <p class="team-role">Marketing Digital</p>
+            </article>
+
+            <article class="team-card">
+              <img
+                class="team-avatar"
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Foto de Guadalupe Pereyra"
+              />
+              <h3 class="team-name">Guadalupe Pereyra</h3>
+              <p class="team-role">Desarrolladora Web</p>
+            </article>
           </div>
 
-          <div class="input-group mt-4 search-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Buscar artículos..."
-              aria-label="Buscar artículos"
-            />
-            <button type="button" class="btn-secondary-solid">Buscar</button>
-          </div>
+          <p class="about-foot">
+            Bienvenido a nuestro blog. Estamos para compartir experiencias y
+            aprendizajes, y acompañarte en tu camino para crecer en tecnología.
+          </p>
         </div>
-
-        <div class="col-lg-6 text-center">
-          <img
-            src="../img/error-illustration.png"
-            class="img-fluid"
-            alt="Página no encontrada"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
-      <div class="row mt-5 g-4">
-        <div class="col-md-6">
-          <div class="p-4 rounded shadow-sm bg-white h-100">
-            <h3 class="fw-bold mb-3 h5">Enlaces útiles</h3>
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="../index.html" class="link-dark">➜ Volver al Inicio</a>
-              </li>
-              <li>
-                <a href="../pages/contacto.html" class="link-dark"
-                  >➜ Ir a Contacto</a
-                >
-              </li>
-              <li>
-                <a href="../pages/nosotros.html" class="link-dark"
-                  >➜ Nosotros</a
-                >
-              </li>
-              <li>
-                <a href="../pages/login.html" class="link-dark">➜ Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="p-4 rounded shadow-sm bg-white h-100 text-center">
-            <h3 class="fw-bold mb-3 h5">Reportar enlace roto</h3>
-            <p class="text-secondary">
-              Si creés que se trata de un error del sitio, avisarnos ayuda a
-              mejorar la experiencia.
-            </p>
-            <a
-              href="../pages/contacto.html"
-              class="btn-secondary-solid w-100 text-center"
-            >
-              Enviar un mensaje
-            </a>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer-dev">
@@ -252,19 +257,16 @@
                 src="../img/logo.png"
                 alt="Logo DevMarketIA"
                 class="footer-logo-img"
-                loading="lazy"
               />
               <div>
                 <h2 class="footer-logo mb-2">
-                  <span class="color-blog text-white px-2 py-1 rounded"
-                    >Blog</span
-                  >
+                  <span class="color-blog text-white px-2 py-1 rounded">Blog</span>
                   DevMarketIA
                 </h2>
                 <p class="footer-text mb-3">
-                  Contenidos sobre programación, marketing e inteligencia
-                  artificial para equipos y personas que quieren entender y
-                  aprovechar la tecnología en su día a día.
+                  Contenidos sobre programación, marketing e inteligencia artificial
+                  para equipos y personas que quieren entender y aprovechar la
+                  tecnología en su día a día.
                 </p>
                 <button
                   type="button"
@@ -281,19 +283,11 @@
           <div class="col">
             <h3 class="footer-title">Explorá contenidos</h3>
             <ul class="footer-links list-unstyled mb-0">
-              <li>
-                <a href="#" class="footer-link">Programación y desarrollo</a>
-              </li>
+              <li><a href="#" class="footer-link">Programación y desarrollo</a></li>
               <li><a href="#" class="footer-link">Marketing y contenido</a></li>
-              <li>
-                <a href="#" class="footer-link">IA aplicada y herramientas</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Automatización y funnels</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Datos, métricas y analítica</a>
-              </li>
+              <li><a href="#" class="footer-link">IA aplicada y herramientas</a></li>
+              <li><a href="#" class="footer-link">Automatización y funnels</a></li>
+              <li><a href="#" class="footer-link">Datos, métricas y analítica</a></li>
             </ul>
           </div>
 
@@ -302,9 +296,7 @@
             <ul class="footer-links list-unstyled mb-3">
               <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
               <li><a href="#" class="footer-link">Soporte / Ayuda</a></li>
-              <li>
-                <a href="#" class="footer-link">Guía para nuevos lectores</a>
-              </li>
+              <li><a href="#" class="footer-link">Guía para nuevos lectores</a></li>
               <li>
                 <a href="../pages/nosotros.html" class="footer-link">
                   Nosotros
@@ -320,31 +312,13 @@
             <h4 class="footer-subtitle">Seguinos</h4>
             <ul class="footer-social list-inline mb-0">
               <li class="list-inline-item">
-                <a
-                  href="https://x.com/MoureDev"
-                  class="footer-social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >X</a
-                >
+                <a href="#" class="footer-social-link">X</a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="https://es.linkedin.com/company/mouredev"
-                  class="footer-social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
+                <a href="#" class="footer-social-link">LinkedIn</a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="https://www.youtube.com/@mouredev"
-                  class="footer-social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >YouTube</a
-                >
+                <a href="#" class="footer-social-link">YouTube</a>
               </li>
             </ul>
           </div>
@@ -375,6 +349,10 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

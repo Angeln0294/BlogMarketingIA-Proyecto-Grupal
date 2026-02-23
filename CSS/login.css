@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 
 :root {
-  --color-border-soft: #dee2e6;
+  --color-primary: #111111;
   --color-accent: #6faf9a;
+  --color-bg-page: #f5f7f9;
+  --color-border-soft: #dee2e6;
 }
 
-html,
 body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  color: #111111;
+}
+
+.navbar {
+  background-color: #ffffff;
 }
 
 .color-blog {
-  background-color: #6FAF9A;
+  background-color: var(--color-accent);
 }
 
 .btn-suscripcion-rojo {
@@ -34,21 +38,59 @@ body {
   border-color: #d9534f !important;
 }
 
+.btn-redes {
+  text-decoration: none;
+  color: #111111;
+}
+
+.bg-page {
+  background-color: var(--color-bg-page);
+}
+
+.highlight-brand {
+  color: var(--color-accent);
+}
+
+.login-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.login-card {
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary-main {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary-main:hover,
+.btn-primary-main:focus {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
 .btn-social {
-  background-color: [#ffffff](project/guadampereyra-proyecto-1/t/ffffff);
+  background-color: #ffffff;
   border: 1px solid var(--color-border-soft);
   border-radius: 999px;
   padding: 0.6rem 1.3rem;
   font-weight: 500;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
 }
-
 
 .btn-social .social-icon {
   flex-shrink: 0;
@@ -57,99 +99,47 @@ body {
   justify-content: center;
 }
 
-
 .btn-social:hover,
 .btn-social:focus {
   border-color: var(--color-accent);
-  color: [#111111](project/guadampereyra-proyecto-1/t/111111);
+  color: #111111;
 }
 
-.btn-redes{
-  text-decoration: none;
-  color:#111111
+.divider-line {
+  border-top: 1px solid #e0e4ea;
+  height: 0;
 }
 
-.carousel-caption-custom {
-  border: 1px solid rgba(110, 175, 154, 0.3);
-  padding: 2rem !important;
+.divider-text {
+  white-space: nowrap;
+  background-color: #ffffff;
+  padding: 0 0.75rem;
 }
 
-.h1-verde {
-  color: #6FAF9A !important;
-  font-size: 42px !important;
-  font-weight: 700 !important;
-  text-shadow: 2px 2px 4px #00000080;
-  letter-spacing: -1px;
+.link-password {
+  font-size: 0.85rem;
+  text-decoration: underline;
+  color: #111111;
 }
 
-.h1-verde::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #6FAF9A;
-  margin: 15px auto 0;
-  border-radius: 2px;
+.link-password:hover,
+.link-password:focus {
+  color: var(--color-accent);
 }
 
-.p-verde {
-  color: #cbdad5 !important;
-  font-size: 1.2rem;
-  font-weight: 400;
+.container{
+  margin-top: 40px;
+}
+.login-image-wrapper {
+  padding: 1.5rem;
+  text-align: center;
 }
 
-#carousel-DivMarketIA {
-  overflow: hidden;
+.login-hero-img {
   max-width: 100%;
-}
-
-.carousel-img {
-  width: 100%;
-  max-width: 100%;
-  height: 500px;
-  object-fit: cover;
-  display: block;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-}
-
-.pagination .page-link {
-  color: #6FAF9A;
-}
-
-.pagination .page-item.active .page-link {
-  background-color: #6FAF9A;
-  border-color: #6FAF9A;
-  color: #fff;
-}
-
-.pagination .page-link:hover {
-  color: #4e8c77;
-}
-
-.pagination .page-item.disabled .page-link {
-  color: #ccc;
-}
-
-.list-group-item a {
-  display: block;
-  color: #6FAF9A;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.2s;
-}
-
-.list-group-item a:hover {
-  color: #0d6efd;
-  transform: translateX(5px);
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
 .footer-dev {
@@ -188,8 +178,8 @@ body {
 }
 
 .btn-footer-newsletter {
-  background-color: #6faf9a;
-  border-color: #6faf9a;
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
   color: #111111;
   border-radius: 999px;
   padding: 0.45rem 1.1rem;
@@ -215,7 +205,7 @@ body {
 
 .footer-link:hover,
 .footer-link:focus {
-  color: #6faf9a;
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
@@ -231,8 +221,8 @@ body {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  border-color: #6faf9a;
-  color: #6faf9a;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .footer-divider {
@@ -268,23 +258,16 @@ body {
   color: #d1d5db;
 }
 
-/* =========================
-   MEDIA QUERIES
-========================= */
-
-@media (max-width: 992px) {
-  .carousel-img {
-    height: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-img {
-    height: 300px;
-  }
-}
-
 @media (max-width: 767.98px) {
+  .login-main {
+    padding-top: 4.5rem;
+    align-items: flex-start;
+  }
+
+  .login-image-wrapper {
+    display: none;
+  }
+
   .btn-social {
     text-align: center;
   }

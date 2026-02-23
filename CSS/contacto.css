@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 
 :root {
-  --color-border-soft: #dee2e6;
   --color-accent: #6faf9a;
+  --color-border-soft: #dee2e6;
 }
 
-html,
 body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
 }
 
 .color-blog {
-  background-color: #6FAF9A;
+  background-color: var(--color-accent);
 }
 
 .btn-suscripcion-rojo {
@@ -35,20 +36,17 @@ body {
 }
 
 .btn-social {
-  background-color: [#ffffff](project/guadampereyra-proyecto-1/t/ffffff);
+  background-color: #ffffff;
   border: 1px solid var(--color-border-soft);
   border-radius: 999px;
   padding: 0.6rem 1.3rem;
   font-weight: 500;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
 }
-
 
 .btn-social .social-icon {
   flex-shrink: 0;
@@ -57,99 +55,49 @@ body {
   justify-content: center;
 }
 
-
 .btn-social:hover,
 .btn-social:focus {
   border-color: var(--color-accent);
-  color: [#111111](project/guadampereyra-proyecto-1/t/111111);
+  color: #111111;
 }
 
-.btn-redes{
+.btn-redes {
   text-decoration: none;
-  color:#111111
+  color: #111111;
 }
 
-.carousel-caption-custom {
-  border: 1px solid rgba(110, 175, 154, 0.3);
-  padding: 2rem !important;
+h1 span {
+  color: var(--color-accent);
 }
 
-.h1-verde {
-  color: #6FAF9A !important;
-  font-size: 42px !important;
-  font-weight: 700 !important;
-  text-shadow: 2px 2px 4px #00000080;
-  letter-spacing: -1px;
+.bg-light {
+  background-color: #f9f9f9 !important;
 }
 
-.h1-verde::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #6FAF9A;
-  margin: 15px auto 0;
-  border-radius: 2px;
+.btn-primary-main {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.p-verde {
-  color: #cbdad5 !important;
-  font-size: 1.2rem;
-  font-weight: 400;
+.btn-primary-main:hover {
+  background-color: #222222 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
 }
 
-#carousel-DivMarketIA {
-  overflow: hidden;
-  max-width: 100%;
+.btn-primary-main:active {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  transform: translateY(0);
 }
 
-.carousel-img {
-  width: 100%;
-  max-width: 100%;
-  height: 500px;
-  object-fit: cover;
-  display: block;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-}
-
-.pagination .page-link {
-  color: #6FAF9A;
-}
-
-.pagination .page-item.active .page-link {
-  background-color: #6FAF9A;
-  border-color: #6FAF9A;
-  color: #fff;
-}
-
-.pagination .page-link:hover {
-  color: #4e8c77;
-}
-
-.pagination .page-item.disabled .page-link {
-  color: #ccc;
-}
-
-.list-group-item a {
-  display: block;
-  color: #6FAF9A;
-  font-weight: 500;
+#link-web{
   text-decoration: none;
-  transition: color 0.3s, transform 0.2s;
-}
-
-.list-group-item a:hover {
-  color: #0d6efd;
-  transform: translateX(5px);
 }
 
 .footer-dev {
@@ -188,8 +136,8 @@ body {
 }
 
 .btn-footer-newsletter {
-  background-color: #6faf9a;
-  border-color: #6faf9a;
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
   color: #111111;
   border-radius: 999px;
   padding: 0.45rem 1.1rem;
@@ -215,7 +163,7 @@ body {
 
 .footer-link:hover,
 .footer-link:focus {
-  color: #6faf9a;
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
@@ -231,8 +179,8 @@ body {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  border-color: #6faf9a;
-  color: #6faf9a;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .footer-divider {
@@ -266,22 +214,6 @@ body {
 .footer-disclaimer {
   max-width: 680px;
   color: #d1d5db;
-}
-
-/* =========================
-   MEDIA QUERIES
-========================= */
-
-@media (max-width: 992px) {
-  .carousel-img {
-    height: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-img {
-    height: 300px;
-  }
 }
 
 @media (max-width: 767.98px) {
